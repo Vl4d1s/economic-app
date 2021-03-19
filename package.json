@@ -1,0 +1,16 @@
+{
+  "name": "economic-app-root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "b": "npm run bootstrap",
+    "bootstrap": "lerna bootstrap",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lerna run start --parallel",
+    "postinstall": "npm run bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

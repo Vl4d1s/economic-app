@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://vladis123:vladis123@economic-app.txemu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
