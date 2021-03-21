@@ -18,8 +18,8 @@ class App extends Component {
         <Router>
           <HeaderMenu
             items={[
-              ["page1", "/page1"],
-              ["page2", "/page2"],
+              ["Page1", "/page1"],
+              ["Tabels", "/tabels"],
             ]}
             headerIcon={"calculator"}
           />
