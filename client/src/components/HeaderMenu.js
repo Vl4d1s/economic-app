@@ -21,7 +21,7 @@ class HeaderMenu extends Component {
           index={i}
           as={Link}
           to={route}
-          header={i === 0}
+          // header={i === 0}
           active={route === location.pathname}
         >
           {name}
@@ -30,7 +30,7 @@ class HeaderMenu extends Component {
     }
 
     return (
-      <Menu pointing size="huge">
+      <Menu size="massive">
         <Menu.Item header as={Link} to={"/"}>
           {headerIcon && <Icon name={headerIcon} size="large" />}
           Economic Calculator
@@ -51,8 +51,8 @@ class HeaderMenu extends Component {
 }
 
 HeaderMenu.propTypes = {
-  onItemClick: PropTypes.func.isRequired,
-  headerIcon: PropTypes.string.isRequired,
+  // onItemClick: PropTypes.func.isRequired,
+  // headerIcon: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.array.isRequired).isRequired,
 };
 

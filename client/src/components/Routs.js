@@ -1,14 +1,15 @@
 import { Route, Switch } from "react-router-dom";
 import React from "react";
-import page1 from "./pages/page1";
-import page2 from "./pages/page2";
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
+import Home from "./pages/Home";
 
 const Routs = () => {
   return (
     <Switch>
-      <Route path="/" exact component={page1} />
-      <Route path="/page1" component={page1} />
-      <Route path="/page2" component={page2} />
+      <Route path="/" exact component={Home} />
+      <Route path="/Page1" component={Page1} />
+      <Route path="/Page2" component={Page2} />
     </Switch>
   );
 };

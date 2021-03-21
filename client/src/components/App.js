@@ -4,7 +4,6 @@ import HeaderMenu from "./HeaderMenu";
 import Footer from "./Footer";
 import { Container } from "semantic-ui-react";
 import Routs from "./Routs";
-
 class App extends Component {
   render() {
     return (
@@ -13,6 +12,7 @@ class App extends Component {
           display: "flex",
           minHeight: "100vh",
           flexDirection: "column",
+          marginTop: "1px",
         }}
       >
         <Router>
