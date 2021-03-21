@@ -30,13 +30,11 @@ class HeaderMenu extends Component {
     }
 
     return (
-      <Menu pointing secondary size="huge">
-        {this.props.headerIcon && (
-          <Menu.Item>
-            <Icon name={headerIcon} size="large" />
-          </Menu.Item>
-        )}
-
+      <Menu pointing size="huge">
+        <Menu.Item header as={Link} to={"/"}>
+          {headerIcon && <Icon name={headerIcon} size="large" />}
+          Economic Calculator
+        </Menu.Item>
         {menuItems}
         <Menu.Menu position="right">
           <Dropdown item text="More">

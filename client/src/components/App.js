@@ -18,7 +18,6 @@ class App extends Component {
         <Router>
           <HeaderMenu
             items={[
-              ["Home", "/"],
               ["page1", "/page1"],
               ["page2", "/page2"],
             ]}
