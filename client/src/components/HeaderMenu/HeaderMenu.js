@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Menu, Icon, Dropdown } from "semantic-ui-react";
-import { Link, withRouter } from "react-router-dom";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Menu, Icon, Dropdown } from 'semantic-ui-react';
+import { Link, withRouter } from 'react-router-dom';
 
 class HeaderMenu extends Component {
   render() {
@@ -16,34 +16,32 @@ class HeaderMenu extends Component {
       const name = items[i][0];
       const route = items[i][1];
       menuItems.push(
-        <Menu.Item
-          key={"item-" + i}
-          index={i}
-          as={Link}
-          to={route}
-          active={route === location.pathname}
-        >
+        <Menu.Item key={'item-' + i} index={i} as={Link} to={route} active={route === location.pathname}>
           {name}
         </Menu.Item>
       );
     }
 
+    const rightMenu = () => (
+      <Menu.Menu position="right">
+        <Dropdown item text="Tabels">
+          <Dropdown.Menu>
+            <Dropdown.Item icon="group" text="Workers" as={Link} to={'/workers'} />
+            <Dropdown.Item icon="percent" text="InterestRate" as={Link} to={'/interestrate'} />
+            <Dropdown.Item icon="settings" text="option3" />
+          </Dropdown.Menu>
+        </Dropdown>
+      </Menu.Menu>
+    );
+
     return (
       <Menu size="massive">
-        <Menu.Item header as={Link} to={"/"}>
+        <Menu.Item header as={Link} to={'/'}>
           {headerIcon && <Icon name={headerIcon} size="large" />}
           Economic Calculator
         </Menu.Item>
         {menuItems}
-        <Menu.Menu position="right">
-          <Dropdown item text="More">
-            <Dropdown.Menu>
-              <Dropdown.Item icon="edit" text="option1" as={Link} to={"/"} />
-              <Dropdown.Item icon="globe" text="option2" />
-              <Dropdown.Item icon="settings" text="option3" />
-            </Dropdown.Menu>
-          </Dropdown>
-        </Menu.Menu>
+        {rightMenu()}
       </Menu>
     );
   }

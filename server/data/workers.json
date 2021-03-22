@@ -1,7 +1,7 @@
 ﻿[
   {
     "id": "1",
-    "name ": "חיים",
+    "name": "חיים",
     "last_name": "גלוקמן ",
     "sex": "M",
     "birth_date": "09-09-84",
@@ -17,7 +17,7 @@
   },
   {
     "id": "2",
-    "name ": "שרה",
+    "name": "שרה",
     "last_name": "אברג'ל ",
     "sex": "F",
     "birth_date": "08-23-84",
@@ -33,7 +33,7 @@
   },
   {
     "id": "3",
-    "name ": "מאיר",
+    "name": "מאיר",
     "last_name": "טרבלסי",
     "sex": "M",
     "birth_date": "01-17-65",
@@ -49,7 +49,7 @@
   },
   {
     "id": "4",
-    "name ": "אירית",
+    "name": "אירית",
     "last_name": "אשכנזי",
     "sex": "F",
     "birth_date": "08-06-66",
@@ -65,7 +65,7 @@
   },
   {
     "id": "5",
-    "name ": "נתנאל",
+    "name": "נתנאל",
     "last_name": "קיופמן",
     "sex": "M",
     "birth_date": "08-28-66",
@@ -81,7 +81,7 @@
   },
   {
     "id": "6",
-    "name ": "משה",
+    "name": "משה",
     "last_name": "קופרמן",
     "sex": "M",
     "birth_date": "08-20-67",
@@ -97,7 +97,7 @@
   },
   {
     "id": "7",
-    "name ": "חיה ",
+    "name": "חיה ",
     "last_name": "לוי",
     "sex": "F",
     "birth_date": "07-01-67",
@@ -113,7 +113,7 @@
   },
   {
     "id": "8",
-    "name ": "צילה",
+    "name": "צילה",
     "last_name": "ברנבוים",
     "sex": "F",
     "birth_date": "07-13-68",
@@ -129,7 +129,7 @@
   },
   {
     "id": "9",
-    "name ": "אביגל",
+    "name": "אביגל",
     "last_name": "מצ'טנר",
     "sex": "F",
     "birth_date": "02-29-72",
@@ -145,7 +145,7 @@
   },
   {
     "id": "10",
-    "name ": "אבי",
+    "name": "אבי",
     "last_name": "גולדמן",
     "sex": "M",
     "birth_date": "08-11-72",
@@ -161,7 +161,7 @@
   },
   {
     "id": "11",
-    "name ": "משה",
+    "name": "משה",
     "last_name": "אבולפיה",
     "sex": "M",
     "birth_date": "08-01-72",
@@ -177,7 +177,7 @@
   },
   {
     "id": "12",
-    "name ": "אלקס",
+    "name": "אלקס",
     "last_name": "פלטניקוב",
     "sex": "M",
     "birth_date": "09-17-72",
@@ -193,7 +193,7 @@
   },
   {
     "id": "13",
-    "name ": "מיכאל",
+    "name": "מיכאל",
     "last_name": "גולד",
     "sex": "M",
     "birth_date": "11-27-72",
@@ -209,7 +209,7 @@
   },
   {
     "id": "14",
-    "name ": "מרים",
+    "name": "מרים",
     "last_name": "אדלשטיין",
     "sex": "F",
     "birth_date": "10-22-72",
@@ -225,7 +225,7 @@
   },
   {
     "id": "15",
-    "name ": "עדי",
+    "name": "עדי",
     "last_name": "וקסמן",
     "sex": "M",
     "birth_date": "09-15-69",
@@ -241,7 +241,7 @@
   },
   {
     "id": "16",
-    "name ": "אסנת",
+    "name": "אסנת",
     "last_name": "גולדברג",
     "sex": "F",
     "birth_date": "12-04-70",
@@ -252,11 +252,12 @@
     "prop_value": "127500",
     "deposits": "0",
     "leaving_date": "-",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "17",
-    "name ": "רחל",
+    "name": "רחל",
     "last_name": "בן משה",
     "sex": "F",
     "birth_date": "02-16-70",
@@ -267,11 +268,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "-",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "18",
-    "name ": "נקול",
+    "name": "נקול",
     "last_name": "פטרוק",
     "sex": "F",
     "birth_date": "05-15-70",
@@ -282,11 +284,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "-",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "19",
-    "name ": "אנטולי",
+    "name": "אנטולי",
     "last_name": "וסרמן",
     "sex": "M",
     "birth_date": "01-12-71",
@@ -297,11 +300,12 @@
     "prop_value": "42500",
     "deposits": "0",
     "leaving_date": "-",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "20",
-    "name ": "נורית",
+    "name": "נורית",
     "last_name": "שמיר",
     "sex": "F",
     "birth_date": "03-02-72",
@@ -312,11 +316,12 @@
     "prop_value": "102000",
     "deposits": "8000",
     "leaving_date": "12-01-19",
-    "pay_prop": "82000"
+    "pay_prop": "82000",
+    "comp_check": ""
   },
   {
     "id": "21",
-    "name ": "משה",
+    "name": "משה",
     "last_name": "שלמה ",
     "sex": "M",
     "birth_date": "05-07-71",
@@ -327,11 +332,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "22",
-    "name ": "טל",
+    "name": "טל",
     "last_name": "בואדנו",
     "sex": "F",
     "birth_date": "08-24-71",
@@ -342,11 +348,12 @@
     "prop_value": "238000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "23",
-    "name ": "בוריס",
+    "name": "בוריס",
     "last_name": "לויטין",
     "sex": "M",
     "birth_date": "01-29-72",
@@ -357,11 +364,12 @@
     "prop_value": "221000",
     "deposits": "0",
     "leaving_date": "12-06-19",
-    "pay_prop": "205000"
+    "pay_prop": "205000",
+    "comp_check": ""
   },
   {
     "id": "24",
-    "name ": "אור",
+    "name": "אור",
     "last_name": "בוזגלו",
     "sex": "M",
     "birth_date": "06-21-79",
@@ -372,11 +380,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "25",
-    "name ": "שי",
+    "name": "שי",
     "last_name": "צוריקר",
     "sex": "M",
     "birth_date": "12-29-73",
@@ -387,11 +396,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "26",
-    "name ": "אוסנת",
+    "name": "אוסנת",
     "last_name": "רוטברג",
     "sex": "F",
     "birth_date": "04-22-74",
@@ -402,11 +412,12 @@
     "prop_value": "153000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "27",
-    "name ": "אבי",
+    "name": "אבי",
     "last_name": "שטרן",
     "sex": "M",
     "birth_date": "03-29-76",
@@ -417,11 +428,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "28",
-    "name ": "מיכל",
+    "name": "מיכל",
     "last_name": "ברדה",
     "sex": "F",
     "birth_date": "02-05-76",
@@ -432,11 +444,12 @@
     "prop_value": "212500",
     "deposits": "24012.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "29",
-    "name ": "מוטי",
+    "name": "מוטי",
     "last_name": "סילברבג",
     "sex": "M",
     "birth_date": "08-19-76",
@@ -447,11 +460,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "04-03-19",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "30",
-    "name ": "שרון",
+    "name": "שרון",
     "last_name": "קמחי",
     "sex": "M",
     "birth_date": "03-16-80",
@@ -462,11 +476,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "31",
-    "name ": "נעה",
+    "name": "נעה",
     "last_name": "מיכלשוילי",
     "sex": "F",
     "birth_date": "06-21-84",
@@ -477,11 +492,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "32",
-    "name ": "מוחמד",
+    "name": "מוחמד",
     "last_name": "אבוארר",
     "sex": "M",
     "birth_date": "06-22-84",
@@ -492,11 +508,12 @@
     "prop_value": "153000",
     "deposits": "17637.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "33",
-    "name ": "ליאת",
+    "name": "ליאת",
     "last_name": "סעדיה",
     "sex": "F",
     "birth_date": "04-01-85",
@@ -507,11 +524,12 @@
     "prop_value": "68000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "34",
-    "name ": "סטס",
+    "name": "סטס",
     "last_name": "ברזובסקי",
     "sex": "M",
     "birth_date": "10-23-78",
@@ -522,11 +540,12 @@
     "prop_value": "204000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "35",
-    "name ": "שילו",
+    "name": "שילו",
     "last_name": "ממון",
     "sex": "M",
     "birth_date": "12-03-82",
@@ -537,11 +556,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "10-28-19",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "36",
-    "name ": "דניאל",
+    "name": "דניאל",
     "last_name": "סרגון",
     "sex": "M",
     "birth_date": "06-21-75",
@@ -552,11 +572,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "37",
-    "name ": "אשר",
+    "name": "אשר",
     "last_name": "ורדה",
     "sex": "M",
     "birth_date": "08-12-75",
@@ -567,11 +588,12 @@
     "prop_value": "127500",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "38",
-    "name ": "גבי",
+    "name": "גבי",
     "last_name": "בן דוד",
     "sex": "M",
     "birth_date": "08-16-75",
@@ -582,11 +604,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "39",
-    "name ": "נדב",
+    "name": "נדב",
     "last_name": "זקס",
     "sex": "M",
     "birth_date": "11-12-83",
@@ -597,11 +620,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "40",
-    "name ": "שרלי",
+    "name": "שרלי",
     "last_name": "רם",
     "sex": "F",
     "birth_date": "12-21-92",
@@ -612,11 +636,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "01-25-19",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "41",
-    "name ": "אירנה",
+    "name": "אירנה",
     "last_name": "ולקוב",
     "sex": "F",
     "birth_date": "04-23-58",
@@ -627,11 +652,12 @@
     "prop_value": "68000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "42",
-    "name ": "אנה",
+    "name": "אנה",
     "last_name": "בלושטיין",
     "sex": "F",
     "birth_date": "06-08-93",
@@ -642,11 +668,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "43",
-    "name ": "נטלי",
+    "name": "נטלי",
     "last_name": "קלימן",
     "sex": "F",
     "birth_date": "03-04-81",
@@ -657,11 +684,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "44",
-    "name ": "חיים",
+    "name": "חיים",
     "last_name": "שפיגל",
     "sex": "M",
     "birth_date": "05-25-75",
@@ -672,11 +700,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "45",
-    "name ": "לימור",
+    "name": "לימור",
     "last_name": "גרוטו",
     "sex": "F",
     "birth_date": "06-17-95",
@@ -687,11 +716,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "46",
-    "name ": "דיאנה",
+    "name": "דיאנה",
     "last_name": "וקסלר",
     "sex": "F",
     "birth_date": "05-24-58",
@@ -702,11 +732,12 @@
     "prop_value": "297500",
     "deposits": "14450",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "47",
-    "name ": "ולנטינה",
+    "name": "ולנטינה",
     "last_name": "ספוג'ניקוב",
     "sex": "F",
     "birth_date": "10-04-57",
@@ -717,11 +748,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "48",
-    "name ": "רחל",
+    "name": "רחל",
     "last_name": "מור",
     "sex": "F",
     "birth_date": "08-30-73",
@@ -737,7 +769,7 @@
   },
   {
     "id": "49",
-    "name ": "רומן",
+    "name": "רומן",
     "last_name": "ברון",
     "sex": "M",
     "birth_date": "09-18-51",
@@ -753,7 +785,7 @@
   },
   {
     "id": "50",
-    "name ": "אילן",
+    "name": "אילן",
     "last_name": "ברורמן",
     "sex": "M",
     "birth_date": "08-22-68",
@@ -769,7 +801,7 @@
   },
   {
     "id": "51",
-    "name ": "רות",
+    "name": "רות",
     "last_name": "שקולניק",
     "sex": "F",
     "birth_date": "07-26-73",
@@ -785,7 +817,7 @@
   },
   {
     "id": "52",
-    "name ": "שלמה",
+    "name": "שלמה",
     "last_name": "ברודי",
     "sex": "M",
     "birth_date": "10-12-77",
@@ -801,7 +833,7 @@
   },
   {
     "id": "53",
-    "name ": "איגל",
+    "name": "איגל",
     "last_name": "פז",
     "sex": "M",
     "birth_date": "05-02-85",
@@ -817,7 +849,7 @@
   },
   {
     "id": "54",
-    "name ": "יואב",
+    "name": "יואב",
     "last_name": "מורדכי",
     "sex": "M",
     "birth_date": "03-18-83",
@@ -833,7 +865,7 @@
   },
   {
     "id": "55",
-    "name ": "דוד",
+    "name": "דוד",
     "last_name": "זינו",
     "sex": "M",
     "birth_date": "07-04-79",
@@ -849,7 +881,7 @@
   },
   {
     "id": "56",
-    "name ": "רונן",
+    "name": "רונן",
     "last_name": "פלדמן",
     "sex": "M",
     "birth_date": "09-03-80",
@@ -865,7 +897,7 @@
   },
   {
     "id": "57",
-    "name ": "עודד",
+    "name": "עודד",
     "last_name": "גליקסמן",
     "sex": "M",
     "birth_date": "02-05-59",
@@ -881,7 +913,7 @@
   },
   {
     "id": "58",
-    "name ": "אביטל",
+    "name": "אביטל",
     "last_name": "שליט",
     "sex": "F",
     "birth_date": "01-05-82",
@@ -897,7 +929,7 @@
   },
   {
     "id": "59",
-    "name ": "אגם",
+    "name": "אגם",
     "last_name": "ז'אן",
     "sex": "F",
     "birth_date": "03-14-84",
@@ -913,7 +945,7 @@
   },
   {
     "id": "60",
-    "name ": "אלנה",
+    "name": "אלנה",
     "last_name": "קרבצוב",
     "sex": "F",
     "birth_date": "02-28-57",
@@ -929,7 +961,7 @@
   },
   {
     "id": "61",
-    "name ": "דרור",
+    "name": "דרור",
     "last_name": "כהן",
     "sex": "M",
     "birth_date": "04-16-75",
@@ -945,7 +977,7 @@
   },
   {
     "id": "62",
-    "name ": "מור",
+    "name": "מור",
     "last_name": "שויט",
     "sex": "M",
     "birth_date": "05-16-84",
@@ -961,7 +993,7 @@
   },
   {
     "id": "63",
-    "name ": "ולד",
+    "name": "ולד",
     "last_name": "ליברמן",
     "sex": "M",
     "birth_date": "04-09-82",
@@ -977,7 +1009,7 @@
   },
   {
     "id": "64",
-    "name ": "חנה",
+    "name": "חנה",
     "last_name": "שניידר",
     "sex": "F",
     "birth_date": "07-29-53",
@@ -993,7 +1025,7 @@
   },
   {
     "id": "65",
-    "name ": "יוסי",
+    "name": "יוסי",
     "last_name": "קפלן",
     "sex": "M",
     "birth_date": "01-17-70",
@@ -1009,7 +1041,7 @@
   },
   {
     "id": "66",
-    "name ": "פאינה",
+    "name": "פאינה",
     "last_name": "בלוגולבסקי",
     "sex": "F",
     "birth_date": "02-10-75",
@@ -1025,7 +1057,7 @@
   },
   {
     "id": "67",
-    "name ": "סמדר",
+    "name": "סמדר",
     "last_name": "שילו",
     "sex": "F",
     "birth_date": "04-22-66",
@@ -1041,7 +1073,7 @@
   },
   {
     "id": "68",
-    "name ": "נחום",
+    "name": "נחום",
     "last_name": "ברוך",
     "sex": "M",
     "birth_date": "05-09-68",
@@ -1057,7 +1089,7 @@
   },
   {
     "id": "69",
-    "name ": "דבורה",
+    "name": "דבורה",
     "last_name": "לבינסקי",
     "sex": "F",
     "birth_date": "09-09-68",
@@ -1073,7 +1105,7 @@
   },
   {
     "id": "70",
-    "name ": "איתן",
+    "name": "איתן",
     "last_name": "מנדל",
     "sex": "M",
     "birth_date": "04-29-69",
@@ -1089,7 +1121,7 @@
   },
   {
     "id": "71",
-    "name ": "משה",
+    "name": "משה",
     "last_name": "דרור",
     "sex": "M",
     "birth_date": "06-22-69",
@@ -1105,7 +1137,7 @@
   },
   {
     "id": "72",
-    "name ": "טליה",
+    "name": "טליה",
     "last_name": "לבנון",
     "sex": "F",
     "birth_date": "02-11-72",
@@ -1121,7 +1153,7 @@
   },
   {
     "id": "73",
-    "name ": "מוריה",
+    "name": "מוריה",
     "last_name": "ג'קסון",
     "sex": "F",
     "birth_date": "05-18-72",
@@ -1137,7 +1169,7 @@
   },
   {
     "id": "74",
-    "name ": "הילה",
+    "name": "הילה",
     "last_name": "אלטרמן",
     "sex": "F",
     "birth_date": "04-15-72",
@@ -1153,7 +1185,7 @@
   },
   {
     "id": "75",
-    "name ": "אורית",
+    "name": "אורית",
     "last_name": "רגב",
     "sex": "F",
     "birth_date": "12-18-72",
@@ -1169,7 +1201,7 @@
   },
   {
     "id": "76",
-    "name ": "מאיר",
+    "name": "מאיר",
     "last_name": "שלונסקי",
     "sex": "M",
     "birth_date": "01-28-74",
@@ -1185,7 +1217,7 @@
   },
   {
     "id": "77",
-    "name ": "מיטל",
+    "name": "מיטל",
     "last_name": "שריקי",
     "sex": "F",
     "birth_date": "09-27-73",
@@ -1201,7 +1233,7 @@
   },
   {
     "id": "78",
-    "name ": "דינה",
+    "name": "דינה",
     "last_name": "כוגן",
     "sex": "F",
     "birth_date": "05-14-70",
@@ -1217,7 +1249,7 @@
   },
   {
     "id": "79",
-    "name ": "טהילה",
+    "name": "טהילה",
     "last_name": "וקנין",
     "sex": "F",
     "birth_date": "05-04-70",
@@ -1233,7 +1265,7 @@
   },
   {
     "id": "80",
-    "name ": "רות",
+    "name": "רות",
     "last_name": "בן משה",
     "sex": "F",
     "birth_date": "01-02-71",
@@ -1244,11 +1276,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "81",
-    "name ": "אמיליה",
+    "name": "אמיליה",
     "last_name": "קצנלסון",
     "sex": "F",
     "birth_date": "04-20-74",
@@ -1259,11 +1292,12 @@
     "prop_value": "297500",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "82",
-    "name ": "חגית",
+    "name": "חגית",
     "last_name": "נחמני",
     "sex": "F",
     "birth_date": "02-15-74",
@@ -1274,11 +1308,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "83",
-    "name ": "ליאור",
+    "name": "ליאור",
     "last_name": "שבתאי",
     "sex": "F",
     "birth_date": "12-20-77",
@@ -1289,11 +1324,12 @@
     "prop_value": "46750",
     "deposits": "0",
     "leaving_date": "08-01-19",
-    "pay_prop": "46000"
+    "pay_prop": "46000",
+    "comp_check": ""
   },
   {
     "id": "84",
-    "name ": "בוריס",
+    "name": "בוריס",
     "last_name": "ורניק",
     "sex": "M",
     "birth_date": "11-03-75",
@@ -1304,11 +1340,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "85",
-    "name ": "עינב",
+    "name": "עינב",
     "last_name": "כץ ",
     "sex": "F",
     "birth_date": "10-26-76",
@@ -1319,11 +1356,12 @@
     "prop_value": "15000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "86",
-    "name ": "עדי",
+    "name": "עדי",
     "last_name": "חסן",
     "sex": "F",
     "birth_date": "04-28-77",
@@ -1334,11 +1372,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "87",
-    "name ": "דוד",
+    "name": "דוד",
     "last_name": "רוזנברג",
     "sex": "M",
     "birth_date": "09-03-77",
@@ -1349,11 +1388,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "88",
-    "name ": "שלומית",
+    "name": "שלומית",
     "last_name": "גירין",
     "sex": "F",
     "birth_date": "07-15-78",
@@ -1364,11 +1404,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "89",
-    "name ": "שרון",
+    "name": "שרון",
     "last_name": "חביה תקומי",
     "sex": "M",
     "birth_date": "04-30-78",
@@ -1379,11 +1420,12 @@
     "prop_value": "297500",
     "deposits": "14000",
     "leaving_date": "07-06-19",
-    "pay_prop": "295200"
+    "pay_prop": "295200",
+    "comp_check": ""
   },
   {
     "id": "90",
-    "name ": "דניאל",
+    "name": "דניאל",
     "last_name": "עמית",
     "sex": "F",
     "birth_date": "02-22-84",
@@ -1394,11 +1436,12 @@
     "prop_value": "40000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "91",
-    "name ": "נעמה",
+    "name": "נעמה",
     "last_name": "חן",
     "sex": "F",
     "birth_date": "06-21-84",
@@ -1409,11 +1452,12 @@
     "prop_value": "59500",
     "deposits": "9265",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "92",
-    "name ": "נדב",
+    "name": "נדב",
     "last_name": "בנט",
     "sex": "M",
     "birth_date": "12-12-74",
@@ -1424,11 +1468,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "93",
-    "name ": "חנה",
+    "name": "חנה",
     "last_name": "ענבר",
     "sex": "F",
     "birth_date": "04-03-75",
@@ -1439,11 +1484,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "94",
-    "name ": "ליאת",
+    "name": "ליאת",
     "last_name": "בר",
     "sex": "F",
     "birth_date": "09-08-75",
@@ -1454,11 +1500,12 @@
     "prop_value": "170000",
     "deposits": "10200",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "95",
-    "name ": "רחל",
+    "name": "רחל",
     "last_name": "חדד",
     "sex": "F",
     "birth_date": "12-13-82",
@@ -1469,11 +1516,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "96",
-    "name ": "מרינה",
+    "name": "מרינה",
     "last_name": "קדוש",
     "sex": "M",
     "birth_date": "06-10-83",
@@ -1484,11 +1532,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "97",
-    "name ": "איתן",
+    "name": "איתן",
     "last_name": "ספיר",
     "sex": "M",
     "birth_date": "01-26-83",
@@ -1499,11 +1548,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "98",
-    "name ": "דבורה",
+    "name": "דבורה",
     "last_name": "וקנין",
     "sex": "F",
     "birth_date": "02-10-81",
@@ -1514,11 +1564,12 @@
     "prop_value": "59500",
     "deposits": "17153",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "99",
-    "name ": "לוסי",
+    "name": "לוסי",
     "last_name": "שרחה ",
     "sex": "F",
     "birth_date": "10-03-62",
@@ -1529,11 +1580,12 @@
     "prop_value": "255000",
     "deposits": "20888.75",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "100",
-    "name ": "שגיא",
+    "name": "שגיא",
     "last_name": "ביסטרוב",
     "sex": "M",
     "birth_date": "08-10-62",
@@ -1544,11 +1596,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "101",
-    "name ": "חוה",
+    "name": "חוה",
     "last_name": "אינוטייב",
     "sex": "F",
     "birth_date": "12-05-81",
@@ -1559,11 +1612,12 @@
     "prop_value": "150000",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "102",
-    "name ": "בני",
+    "name": "בני",
     "last_name": "רופא",
     "sex": "M",
     "birth_date": "07-22-86",
@@ -1574,11 +1628,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "103",
-    "name ": "שמעון",
+    "name": "שמעון",
     "last_name": "לוי איסקוב",
     "sex": "M",
     "birth_date": "10-29-87",
@@ -1589,11 +1644,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "104",
-    "name ": "דניאל",
+    "name": "דניאל",
     "last_name": "קרייטנברגר",
     "sex": "M",
     "birth_date": "09-19-88",
@@ -1604,11 +1660,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "105",
-    "name ": "חיים",
+    "name": "חיים",
     "last_name": "ישראל",
     "sex": "M",
     "birth_date": "05-25-88",
@@ -1619,11 +1676,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "106",
-    "name ": "שירה",
+    "name": "שירה",
     "last_name": "הרוש",
     "sex": "F",
     "birth_date": "06-19-88",
@@ -1634,11 +1692,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "107",
-    "name ": "אלקס",
+    "name": "אלקס",
     "last_name": "פלדמן",
     "sex": "M",
     "birth_date": "10-14-90",
@@ -1649,11 +1708,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "108",
-    "name ": "סבטלנה",
+    "name": "סבטלנה",
     "last_name": "טישלר ",
     "sex": "F",
     "birth_date": "02-12-68",
@@ -1664,11 +1724,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "109",
-    "name ": "נחום",
+    "name": "נחום",
     "last_name": "מובשוביץ",
     "sex": "M",
     "birth_date": "04-21-77",
@@ -1679,11 +1740,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "110",
-    "name ": "גבי",
+    "name": "גבי",
     "last_name": "פראח ",
     "sex": "F",
     "birth_date": "10-31-69",
@@ -1694,11 +1756,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "111",
-    "name ": "רינה",
+    "name": "רינה",
     "last_name": "רם",
     "sex": "F",
     "birth_date": "09-12-54",
@@ -1709,11 +1772,12 @@
     "prop_value": "340000",
     "deposits": "21250",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "112",
-    "name ": "אמנון",
+    "name": "אמנון",
     "last_name": "שחר",
     "sex": "M",
     "birth_date": "08-12-73",
@@ -1729,7 +1793,7 @@
   },
   {
     "id": "113",
-    "name ": "אלון",
+    "name": "אלון",
     "last_name": "מלכ",
     "sex": "M",
     "birth_date": "08-03-88",
@@ -1745,7 +1809,7 @@
   },
   {
     "id": "114",
-    "name ": "מוטי",
+    "name": "מוטי",
     "last_name": "גורן",
     "sex": "M",
     "birth_date": "07-29-79",
@@ -1761,7 +1825,7 @@
   },
   {
     "id": "115",
-    "name ": "אלונה",
+    "name": "אלונה",
     "last_name": "כהן",
     "sex": "F",
     "birth_date": "10-12-60",
@@ -1777,7 +1841,7 @@
   },
   {
     "id": "116",
-    "name ": "בר",
+    "name": "בר",
     "last_name": "עזיז",
     "sex": "F",
     "birth_date": "05-26-73",
@@ -1793,7 +1857,7 @@
   },
   {
     "id": "117",
-    "name ": "רות",
+    "name": "רות",
     "last_name": "טוביאנה",
     "sex": "F",
     "birth_date": "10-18-53",
@@ -1809,7 +1873,7 @@
   },
   {
     "id": "118",
-    "name ": "אנה ",
+    "name": "אנה ",
     "last_name": "לוי ",
     "sex": "F",
     "birth_date": "04-10-53",
@@ -1825,7 +1889,7 @@
   },
   {
     "id": "119",
-    "name ": "טל",
+    "name": "טל",
     "last_name": "לב",
     "sex": "M",
     "birth_date": "08-28-62",
@@ -1841,7 +1905,7 @@
   },
   {
     "id": "120",
-    "name ": "חנן",
+    "name": "חנן",
     "last_name": "אלמקיאס",
     "sex": "M",
     "birth_date": "12-19-74",
@@ -1857,7 +1921,7 @@
   },
   {
     "id": "121",
-    "name ": "רוביק",
+    "name": "רוביק",
     "last_name": "דקל",
     "sex": "M",
     "birth_date": "03-26-59",
@@ -1873,7 +1937,7 @@
   },
   {
     "id": "122",
-    "name ": "שלמה",
+    "name": "שלמה",
     "last_name": "ברק",
     "sex": "M",
     "birth_date": "07-04-53",
@@ -1889,7 +1953,7 @@
   },
   {
     "id": "123",
-    "name ": "מורד",
+    "name": "מורד",
     "last_name": "עבד אל רחמן",
     "sex": "M",
     "birth_date": "12-20-89",
@@ -1905,7 +1969,7 @@
   },
   {
     "id": "124",
-    "name ": "סתיו ",
+    "name": "סתיו ",
     "last_name": "פומגרין",
     "sex": "M",
     "birth_date": "07-22-84",
@@ -1921,7 +1985,7 @@
   },
   {
     "id": "125",
-    "name ": "אליס",
+    "name": "אליס",
     "last_name": "סרוסי ",
     "sex": "F",
     "birth_date": "11-25-78",
@@ -1937,7 +2001,7 @@
   },
   {
     "id": "126",
-    "name ": "עדן",
+    "name": "עדן",
     "last_name": "מור",
     "sex": "F",
     "birth_date": "05-14-65",
@@ -1953,7 +2017,7 @@
   },
   {
     "id": "127",
-    "name ": "איתמר",
+    "name": "איתמר",
     "last_name": "שמעוני",
     "sex": "M",
     "birth_date": "03-28-89",
@@ -1969,7 +2033,7 @@
   },
   {
     "id": "128",
-    "name ": "גל",
+    "name": "גל",
     "last_name": "גלעדי",
     "sex": "F",
     "birth_date": "12-19-79",
@@ -1980,11 +2044,12 @@
     "prop_value": "13433.640610189",
     "deposits": "4000",
     "leaving_date": "09-04-19",
-    "pay_prop": "12300"
+    "pay_prop": "12300",
+    "comp_check": ""
   },
   {
     "id": "129",
-    "name ": "שי",
+    "name": "שי",
     "last_name": "שמעון",
     "sex": "M",
     "birth_date": "09-29-65",
@@ -1995,11 +2060,12 @@
     "prop_value": "16544.923737521",
     "deposits": "5950",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "130",
-    "name ": "רביטל",
+    "name": "רביטל",
     "last_name": "פרנקו",
     "sex": "F",
     "birth_date": "10-09-74",
@@ -2010,11 +2076,12 @@
     "prop_value": "16935.215330221",
     "deposits": "6215.625",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "131",
-    "name ": "דפנה",
+    "name": "דפנה",
     "last_name": "מזרחי",
     "sex": "F",
     "birth_date": "04-03-80",
@@ -2025,11 +2092,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "132",
-    "name ": "נדין",
+    "name": "נדין",
     "last_name": "גרייב ",
     "sex": "F",
     "birth_date": "06-13-86",
@@ -2040,11 +2108,12 @@
     "prop_value": "15971.809070471",
     "deposits": "5737.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "133",
-    "name ": "מוחמד",
+    "name": "מוחמד",
     "last_name": "טאהא",
     "sex": "M",
     "birth_date": "05-16-73",
@@ -2055,11 +2124,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "134",
-    "name ": "עינב",
+    "name": "עינב",
     "last_name": "בן משה",
     "sex": "F",
     "birth_date": "11-08-75",
@@ -2070,11 +2140,12 @@
     "prop_value": "21461.633766732",
     "deposits": "5737.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "135",
-    "name ": "יעל",
+    "name": "יעל",
     "last_name": "בזאליי",
     "sex": "F",
     "birth_date": "12-09-88",
@@ -2085,11 +2156,12 @@
     "prop_value": "30629.002293742",
     "deposits": "10200",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "136",
-    "name ": "סמדר",
+    "name": "סמדר",
     "last_name": "פרץ",
     "sex": "F",
     "birth_date": "11-11-79",
@@ -2100,11 +2172,12 @@
     "prop_value": "15808.290793224",
     "deposits": "6056.25",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "137",
-    "name ": "תומר",
+    "name": "תומר",
     "last_name": "אקוקה",
     "sex": "M",
     "birth_date": "09-07-66",
@@ -2115,11 +2188,12 @@
     "prop_value": "41045.377581487",
     "deposits": "9642.1875",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "138",
-    "name ": "שי",
+    "name": "שי",
     "last_name": "גוסלקר",
     "sex": "M",
     "birth_date": "12-21-70",
@@ -2130,11 +2204,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "139",
-    "name ": "נפתלי",
+    "name": "נפתלי",
     "last_name": "נאשף",
     "sex": "M",
     "birth_date": "09-27-76",
@@ -2145,11 +2220,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "140",
-    "name ": "שרה",
+    "name": "שרה",
     "last_name": "פיקלר",
     "sex": "F",
     "birth_date": "11-03-77",
@@ -2160,11 +2236,12 @@
     "prop_value": "8933.4529971163",
     "deposits": "6162.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "141",
-    "name ": "לינוי",
+    "name": "לינוי",
     "last_name": "אדרי",
     "sex": "F",
     "birth_date": "04-07-93",
@@ -2175,11 +2252,12 @@
     "prop_value": "6689.9569312739",
     "deposits": "1500",
     "leaving_date": "03-06-19",
-    "pay_prop": "8200"
+    "pay_prop": "8200",
+    "comp_check": ""
   },
   {
     "id": "142",
-    "name ": "בני",
+    "name": "בני",
     "last_name": "דוארי",
     "sex": "M",
     "birth_date": "06-09-70",
@@ -2190,11 +2268,12 @@
     "prop_value": "10054.100072094",
     "deposits": "9137.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "143",
-    "name ": "חדוה",
+    "name": "חדוה",
     "last_name": "אמדו",
     "sex": "F",
     "birth_date": "04-03-81",
@@ -2205,11 +2284,12 @@
     "prop_value": "3700.8441043157",
     "deposits": "5525",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "144",
-    "name ": "אבי",
+    "name": "אבי",
     "last_name": "יעקב ",
     "sex": "M",
     "birth_date": "05-13-83",
@@ -2220,11 +2300,12 @@
     "prop_value": "0",
     "deposits": "0",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "145",
-    "name ": "מוריה",
+    "name": "מוריה",
     "last_name": "מושידה",
     "sex": "F",
     "birth_date": "09-10-83",
@@ -2235,11 +2316,12 @@
     "prop_value": "5023.5630019788",
     "deposits": "2500",
     "leaving_date": "07-05-19",
-    "pay_prop": "4920"
+    "pay_prop": "4920",
+    "comp_check": ""
   },
   {
     "id": "146",
-    "name ": "נעה",
+    "name": "נעה",
     "last_name": "חנינה",
     "sex": "F",
     "birth_date": "04-01-89",
@@ -2250,11 +2332,12 @@
     "prop_value": "9325.9945475045",
     "deposits": "9403.125",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "147",
-    "name ": "רון",
+    "name": "רון",
     "last_name": "לקסמן",
     "sex": "M",
     "birth_date": "05-13-84",
@@ -2265,11 +2348,12 @@
     "prop_value": "10605.804109756",
     "deposits": "10731.25",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "148",
-    "name ": "מקסים",
+    "name": "מקסים",
     "last_name": "גרובר",
     "sex": "M",
     "birth_date": "01-10-80",
@@ -2280,11 +2364,12 @@
     "prop_value": "8802.8273397367",
     "deposits": "8075",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "149",
-    "name ": "פני",
+    "name": "פני",
     "last_name": "מוזס",
     "sex": "F",
     "birth_date": "08-19-85",
@@ -2295,11 +2380,12 @@
     "prop_value": "5452.8405163278",
     "deposits": "5312.5",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   },
   {
     "id": "150",
-    "name ": "מרינה",
+    "name": "מרינה",
     "last_name": "בר לב",
     "sex": "F",
     "birth_date": "09-25-91",
@@ -2310,6 +2396,7 @@
     "prop_value": "5630.4430482842",
     "deposits": "5525",
     "leaving_date": "",
-    "pay_prop": "0"
+    "pay_prop": "0",
+    "comp_check": ""
   }
 ]

@@ -2,10 +2,18 @@ import express from 'express';
 import connectDB from './config/db';
 import { APIPath, serverAPIPort } from '../configuration/index';
 import workers from './data/workers.json';
+import interestRate from './data/interestRate.json';
 
 console.log('starting server', { serverAPIPort, APIPath });
 
 const app = express();
+
+app.use((_, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  next();
+});
 
 // connectDB();
 
@@ -16,7 +24,12 @@ app.get('/', (req, res) => {
 });
 
 app.get(`${APIPath}/workers`, (req, res) => {
-  res.status(200).send({ workers });
+  res.status(200).send({ workers, numOfWorkers: workers.length });
+});
+
+app.get(`${APIPath}/interestrate`, (req, res) => {
+  console.log('here');
+  res.status(200).send({ interestRate, numOfWorkers: interestRate.length });
 });
 
 app.listen(serverAPIPort, err => {
