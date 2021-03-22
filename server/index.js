@@ -31,7 +31,6 @@ app.get(`${APIPath}/workers`, (req, res) => {
 });
 
 app.get(`${APIPath}/interestrate`, (req, res) => {
-  console.log('here');
   res.status(200).send({ data: interestRate });
 });
 
