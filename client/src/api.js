@@ -14,7 +14,14 @@ export const createApiClient = () => {
     },
     getLeavingProb: async () => {
       const res = await axios.get('http://localhost:3232/api/economic/leavingprob');
-      console.log(res.data.data);
+      return res.data.data;
+    },
+    getLifesMens: async () => {
+      const res = await axios.get('http://localhost:3232/api/economic/lifetablemens');
+      return res.data.data;
+    },
+    getLifesWomens: async () => {
+      const res = await axios.get('http://localhost:3232/api/economic/lifetablewomens');
       return res.data.data;
     },
   };

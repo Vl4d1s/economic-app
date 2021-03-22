@@ -4,6 +4,8 @@ import { APIPath, serverAPIPort } from '../configuration/index';
 import workers from './data/workers.json';
 import interestRate from './data/interestRate.json';
 import leavingProb from './data/leavingProb.json';
+import lifeTableWomens from './data/lifeTableWomens.json';
+import lifeTableMens from './data/lifeTableMens.json';
 
 console.log('starting server', { serverAPIPort, APIPath });
 
@@ -31,6 +33,14 @@ app.get(`${APIPath}/workers`, (req, res) => {
 app.get(`${APIPath}/interestrate`, (req, res) => {
   console.log('here');
   res.status(200).send({ data: interestRate });
+});
+
+app.get(`${APIPath}/lifetablemens`, (req, res) => {
+  res.status(200).send({ data: lifeTableMens });
+});
+
+app.get(`${APIPath}/lifetablewomens`, (req, res) => {
+  res.status(200).send({ data: lifeTableWomens });
 });
 
 app.get(`${APIPath}/leavingprob`, (req, res) => {
