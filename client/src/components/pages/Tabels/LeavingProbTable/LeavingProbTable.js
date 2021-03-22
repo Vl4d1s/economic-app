@@ -5,8 +5,8 @@ import { createApiClient } from '../../../../api';
 
 const api = createApiClient();
 
-const WorkersTabel = () => {
-  return <CreateCelledTable apiFunction={api.getWorkers} />;
+const LeavingProbTable = () => {
+  return <CreateCelledTable apiFunction={api.getLeavingProb} />;
 };
 
-export default WorkersTabel;
+export default LeavingProbTable;

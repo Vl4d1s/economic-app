@@ -3,6 +3,7 @@ import connectDB from './config/db';
 import { APIPath, serverAPIPort } from '../configuration/index';
 import workers from './data/workers.json';
 import interestRate from './data/interestRate.json';
+import leavingProb from './data/leavingProb.json';
 
 console.log('starting server', { serverAPIPort, APIPath });
 
@@ -24,12 +25,16 @@ app.get('/', (req, res) => {
 });
 
 app.get(`${APIPath}/workers`, (req, res) => {
-  res.status(200).send({ workers, numOfWorkers: workers.length });
+  res.status(200).send({ data: workers });
 });
 
 app.get(`${APIPath}/interestrate`, (req, res) => {
   console.log('here');
-  res.status(200).send({ interestRate, numOfWorkers: interestRate.length });
+  res.status(200).send({ data: interestRate });
+});
+
+app.get(`${APIPath}/leavingprob`, (req, res) => {
+  res.status(200).send({ data: leavingProb });
 });
 
 app.listen(serverAPIPort, err => {

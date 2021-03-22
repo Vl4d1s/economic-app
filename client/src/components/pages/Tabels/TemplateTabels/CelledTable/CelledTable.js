@@ -1,8 +1,9 @@
 import React from 'react';
 import { Table, Menu, Icon } from 'semantic-ui-react';
 import TableRow from './TableRow/TableRow';
+import CircularLoader from '../../../../CircularLoader/CircularLoader';
 
-const TableExampleColumnCount = ({ columns, tableKeys, table }) => {
+const CelledTable = ({ columns, tableKeys, table }) => {
   return table && table.length > 0 ? (
     <Table columns={columns} celled compact size="small">
       <Table.Header>
@@ -24,11 +25,11 @@ const TableExampleColumnCount = ({ columns, tableKeys, table }) => {
       </Table.Body>
     </Table>
   ) : (
-    <div>Loading...</div>
+    <CircularLoader />
   );
 };
 
-TableExampleColumnCount.defaultProps = {
+CelledTable.defaultProps = {
   columns: 1,
 };
-export default TableExampleColumnCount;
+export default CelledTable;

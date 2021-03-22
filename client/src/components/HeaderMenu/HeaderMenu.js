@@ -27,8 +27,8 @@ class HeaderMenu extends Component {
         <Dropdown item text="Tabels">
           <Dropdown.Menu>
             <Dropdown.Item icon="group" text="Workers" as={Link} to={'/workers'} />
-            <Dropdown.Item icon="percent" text="InterestRate" as={Link} to={'/interestrate'} />
-            <Dropdown.Item icon="settings" text="option3" />
+            <Dropdown.Item icon="percent" text={`Interest Rate`} as={Link} to={'/interestrate'} />
+            <Dropdown.Item icon="chart line" text={`Leaving Prob`} as={Link} to={'/leavingprob'} />
           </Dropdown.Menu>
         </Dropdown>
       </Menu.Menu>
