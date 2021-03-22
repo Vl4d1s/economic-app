@@ -1,7 +1,7 @@
 import express from 'express';
 import connectDB from './config/db';
 import { APIPath, serverAPIPort } from '../configuration/index';
-import data from './data.json';
+import workers from './data/workers.json';
 
 console.log('starting server', { serverAPIPort, APIPath });
 
@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
   res.send('I am a backend server');
 });
 
-app.get(APIPath, (req, res) => {
-  res.status(200).send({ data });
+app.get(`${APIPath}/workers`, (req, res) => {
+  res.status(200).send({ workers });
 });
 
 app.listen(serverAPIPort, err => {

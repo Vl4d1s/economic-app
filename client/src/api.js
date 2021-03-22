@@ -4,8 +4,8 @@ const axios = require('axios');
 
 export const createApiClient = () => {
   return {
-    getData: () => {
-      return axios.get('http://localhost:3232/api/economic').then(res => res.data);
+    getWorkers: () => {
+      return axios.get('http://localhost:3232/api/economic/workers').then(res => res.data);
     },
   };
 };
