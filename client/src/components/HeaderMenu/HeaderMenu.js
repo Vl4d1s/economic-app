@@ -21,7 +21,6 @@ class HeaderMenu extends Component {
           index={i}
           as={Link}
           to={route}
-          // header={i === 0}
           active={route === location.pathname}
         >
           {name}
@@ -51,8 +50,6 @@ class HeaderMenu extends Component {
 }
 
 HeaderMenu.propTypes = {
-  // onItemClick: PropTypes.func.isRequired,
-  // headerIcon: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.array.isRequired).isRequired,
 };
 

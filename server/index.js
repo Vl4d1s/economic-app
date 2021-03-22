@@ -1,21 +1,28 @@
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 8000;
-const connectDB = require("./config/db");
+import express from 'express';
+import connectDB from './config/db';
+import { APIPath, serverAPIPort } from '../configuration/index';
+import data from './data.json';
 
-// app.use(express.urlencoded({ extended: true }));
+console.log('starting server', { serverAPIPort, APIPath });
+
+const app = express();
+
+// connectDB();
+
 app.use(express.json());
 
-connectDB();
-
-app.get("/", (req, res) => {
-  res.send("I am a backend server");
+app.get('/', (req, res) => {
+  res.send('I am a backend server');
 });
 
-app.listen(port, (err) => {
+app.get(APIPath, (req, res) => {
+  res.status(200).send({ data });
+});
+
+app.listen(serverAPIPort, err => {
   if (err) {
     console.log(`Error: ${err.message}`);
   } else {
-    console.log(`server runnig on port ${port}`);
+    console.log(`server runnig on port ${serverAPIPort}`);
   }
 });

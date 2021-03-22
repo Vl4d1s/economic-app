@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import HeaderMenu from "./HeaderMenu";
-import Footer from "./Footer";
+import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
+import Footer from "./components/Footer/Footer";
 import { Container } from "semantic-ui-react";
-import Routs from "./Routs";
+import Routs from "./components/Routs/Routs";
 class App extends Component {
   render() {
     return (

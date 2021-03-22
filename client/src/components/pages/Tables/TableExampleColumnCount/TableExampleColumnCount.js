@@ -1,5 +1,5 @@
-import React from "react";
-import { Table } from "semantic-ui-react";
+import React from 'react';
+import { Table } from 'semantic-ui-react';
 
 const TableExampleColumnCount = ({ color }) => (
   <Table columns={5} color={color} inverted>
@@ -50,6 +50,6 @@ const TableExampleColumnCount = ({ color }) => (
 );
 
 TableExampleColumnCount.defaultProps = {
-  color: "",
+  color: 'black',
 };
 export default TableExampleColumnCount;
