@@ -6,8 +6,8 @@ import interestRate from './data/interestRate.json';
 import leavingProb from './data/leavingProb.json';
 import lifeTableWomens from './data/lifeTableWomens.json';
 import lifeTableMens from './data/lifeTableMens.json';
-
-console.log('starting server', { serverAPIPort, APIPath });
+const PORT = process.env.PORT || 5000;
+// console.log('starting server', { serverAPIPort, APIPath });
 
 const app = express();
 
@@ -46,10 +46,10 @@ app.get(`${APIPath}/leavingprob`, (req, res) => {
   res.status(200).send({ data: leavingProb });
 });
 
-app.listen(serverAPIPort, err => {
+app.listen(PORT, err => {
   if (err) {
     console.log(`Error: ${err.message}`);
   } else {
-    console.log(`server runnig on port ${serverAPIPort}`);
+    console.log(`server runnig on port ${PORT}`);
   }
 });
