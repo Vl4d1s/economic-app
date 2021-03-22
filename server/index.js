@@ -1,5 +1,6 @@
 import express from 'express';
 import connectDB from './config/db';
+import { APIPath } from '../configuration/index';
 import workers from './data/workers.json';
 import interestRate from './data/interestRate.json';
 import leavingProb from './data/leavingProb.json';
