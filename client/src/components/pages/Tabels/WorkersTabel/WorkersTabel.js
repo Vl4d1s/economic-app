@@ -6,7 +6,7 @@ import { createApiClient } from '../../../../api';
 const api = createApiClient();
 
 const WorkersTabel = () => {
-  return <CreateCelledTable apiFunction={api.getWorkers} />;
+  return <CreateCelledTable route="workers" />;
 };
 
 export default WorkersTabel;

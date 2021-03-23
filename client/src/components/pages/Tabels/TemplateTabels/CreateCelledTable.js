@@ -4,14 +4,13 @@ import CelledTable from '../TemplateTabels/CelledTable/CelledTable';
 import { createApiClient } from '../../../../api';
 
 const api = createApiClient();
-
-const CreateCelledTable = props => {
+const CreateCelledTable = ({ route }) => {
   const [table, setTable] = useState([]);
   const [tableKeys, setTableKeys] = useState([]);
 
   useEffect(() => {
     (async function () {
-      const data = await props.apiFunction();
+      const data = await api.getData(route);
       setTable(data);
       setTableKeys(Object.keys(data[0]));
     })();

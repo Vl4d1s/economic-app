@@ -1,12 +1,9 @@
 import React from 'react';
 
 import CreateCelledTable from '../TemplateTabels/CreateCelledTable';
-import { createApiClient } from '../../../../api';
-
-const api = createApiClient();
 
 const lifesWomensTable = () => {
-  return <CreateCelledTable apiFunction={api.getLifesWomens} />;
+  return <CreateCelledTable route="lifetablewomens" />;
 };
 
 export default lifesWomensTable;

@@ -1,12 +1,9 @@
 import React from 'react';
 
 import CreateCelledTable from '../TemplateTabels/CreateCelledTable';
-import { createApiClient } from '../../../../api';
-
-const api = createApiClient();
 
 const LeavingProbTable = () => {
-  return <CreateCelledTable apiFunction={api.getLeavingProb} />;
+  return <CreateCelledTable route="leavingprob" />;
 };
 
 export default LeavingProbTable;
