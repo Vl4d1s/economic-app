@@ -1,11 +1,10 @@
+import { APIRootPath } from '@vl4d1s/conf';
 const axios = require('axios');
-
-// import { APIRootPath } from '../../configuration/index';
 
 export const createApiClient = route => {
   return {
     getData: async route => {
-      const res = await axios.get(`http://localhost:3232/api/economic/${route}`);
+      const res = await axios.get(`${APIRootPath}/${route}`);
       return res.data.data;
     },
   };

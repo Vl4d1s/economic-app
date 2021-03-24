@@ -1,12 +1,12 @@
+import { APIPath, serverAPIPort } from '@vl4d1s/conf';
 import express from 'express';
-import connectDB from './config/db';
-import { APIPath, serverAPIPort } from '../configuration/index';
 import workers from './data/workers.json';
 import interestRate from './data/interestRate.json';
 import leavingProb from './data/leavingProb.json';
 import lifeTableWomens from './data/lifeTableWomens.json';
 import lifeTableMens from './data/lifeTableMens.json';
-// const PORT = process.env.PORT || 5000;
+import connectDB from './config/db';
+
 console.log('starting server', { serverAPIPort, APIPath });
 
 const app = express();

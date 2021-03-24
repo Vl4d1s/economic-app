@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Menu, Icon } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 import TableRow from './TableRow/TableRow';
 import CircularLoader from '../../../../CircularLoader/CircularLoader';
 

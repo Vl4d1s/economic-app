@@ -1,13 +1,12 @@
 import { Route, Switch } from 'react-router-dom';
 import React from 'react';
-import Page1 from '../pages/Page1/Page1';
-import WorkersTabel from '../pages/Tabels/WorkersTabel/WorkersTabel';
-import InterestRateTable from '../pages/Tabels/InterestRateTable/InterestRateTable';
-import LeavingProbTable from '../pages/Tabels/LeavingProbTable/LeavingProbTable';
-import lifesMensTable from '../pages/Tabels/lifesMensTable/lifesMensTable';
-import lifesWomensTable from '../pages/Tabels/lifesWomensTable/lifesWomensTable';
-
-import Home from '../pages/Home/Home';
+import Page1 from '../Pages/Page1/Page1';
+import WorkersTabel from '../Pages/Tabels/WorkersTabel/WorkersTabel';
+import InterestRateTable from '../Pages/Tabels/InterestRateTable/InterestRateTable';
+import LeavingProbTable from '../Pages/Tabels/LeavingProbTable/LeavingProbTable';
+import lifesMensTable from '../Pages/Tabels/lifesMensTable/lifesMensTable';
+import lifesWomensTable from '../Pages/Tabels/lifesWomensTable/lifesWomensTable';
+import Home from '../Pages/Home/Home';
 
 const Routs = () => {
   return (

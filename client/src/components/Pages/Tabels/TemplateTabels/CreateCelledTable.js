@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import CelledTable from '../TemplateTabels/CelledTable/CelledTable';
+import CelledTable from './CelledTable/CelledTable';
 import { createApiClient } from '../../../../api';
 
 const api = createApiClient();

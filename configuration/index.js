@@ -9,7 +9,5 @@ module.exports = {
   host,
   APIDomain,
   APIPath,
+  APIRootPath,
 };
-
-// export const staticsPort = 3000;
-// export const staticsUrl = `${host}:${staticsPort}/`;

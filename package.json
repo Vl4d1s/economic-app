@@ -8,7 +8,7 @@
     "bootstrap": "lerna bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lerna run start --parallel",
-    "postinstall": "npm run bootstrap --hoist"
+    "postinstall": "npm run bootstrap"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
