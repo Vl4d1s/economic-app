@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vl4d1s/conf": "^1.0.0",
+    "@vl4d1s/conf": "^1.0.1",
     "config": "^3.3.6",
     "express": "^4.17.1",
     "mongoose": "^5.12.1",

@@ -1,7 +1,7 @@
 import { APIPath, serverAPIPort } from '@vl4d1s/conf';
 import morgan from 'morgan';
 import express from 'express';
-import connectDB from './config/db';
+// import connectDB from './config/db';
 import workersRouter from './routes/workersRouts';
 import interesRateRouter from './routes/interesRateRouts';
 import lifeTableMensRouter from './routes/lifeTableMensRouts';
