@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import React from 'react';
-import Page1 from '../Pages/Page1/Page1';
+import Compensation from '../Pages/Compensation/Compensation';
 import WorkersTabel from '../Pages/Tabels/WorkersTabel/WorkersTabel';
 import InterestRateTable from '../Pages/Tabels/InterestRateTable/InterestRateTable';
 import LeavingProbTable from '../Pages/Tabels/LeavingProbTable/LeavingProbTable';
@@ -12,7 +12,7 @@ const Routs = () => {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/page1" component={Page1} />
+      <Route path="/compensation" component={Compensation} />
       <Route path="/workers" component={WorkersTabel} />
       <Route path="/interestrate" component={InterestRateTable} />
       <Route path="/leavingprob" component={LeavingProbTable} />

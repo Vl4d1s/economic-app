@@ -12,5 +12,10 @@
   },
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "final-form": "^4.20.2",
+    "react-final-form": "^6.5.3",
+    "styled-components": "^5.2.1"
   }
 }

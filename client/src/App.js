@@ -16,7 +16,7 @@ class App extends Component {
         }}
       >
         <Router>
-          <HeaderMenu items={[['Page1', '/page1']]} headerIcon={'calculator'} />
+          <HeaderMenu items={[['Compensation', '/compensation']]} headerIcon={'calculator'} />
           <div style={{ flex: '1' }}>
             <Routs />
           </div>
