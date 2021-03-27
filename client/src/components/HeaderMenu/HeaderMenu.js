@@ -37,7 +37,7 @@ class HeaderMenu extends Component {
     );
 
     return (
-      <Menu size="middle" secondary>
+      <Menu size="small" secondary>
         <Menu.Item header as={Link} to={'/'}>
           {headerIcon && <Icon name={headerIcon} size="large" />}
           Economic Calculator
