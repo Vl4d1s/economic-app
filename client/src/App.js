@@ -4,6 +4,7 @@ import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import Footer from './components/Footer/Footer';
 import { Container } from 'semantic-ui-react';
 import Routs from './components/Routs/Routs';
+
 class App extends Component {
   render() {
     return (
