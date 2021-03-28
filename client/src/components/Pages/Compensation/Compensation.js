@@ -1,8 +1,8 @@
 import React from 'react';
-import CompensationForm from './CompensationForm/CompensationForm';
+import NewForm from './CompensationForm/NewForm';
 
 const Compensation = () => {
-  return <CompensationForm />;
+  return <NewForm />;
 };
 
 export default Compensation;
