@@ -34,6 +34,25 @@ const validate = values => {
   if (!values.birthDate) {
     errors.birthDate = 'Required';
   }
+  if (values.isArt14 && !values.art14Percent) {
+    errors.art14Percent = 'Required';
+  }
+  if (values.isArt14 && !values.art14StartingDate) {
+    errors.art14StartingDate = 'Required';
+  }
+  if (values.propValue && values.propValue < 0) {
+    errors.propValue = 'Must be real Number';
+  }
+  if (values.deposit && values.deposit < 0) {
+    errors.deposit = 'Must be real Number';
+  }
+  if (values.payProp && values.payProp < 0) {
+    errors.payProp = 'Must be real Number';
+  }
+  if (values.compCheck && values.compCheck < 0) {
+    errors.compCheck = 'Must be real Number';
+  }
+
   return errors;
 };
 
@@ -51,6 +70,7 @@ const NewForm = () => {
       <Form
         onSubmit={onSubmit}
         validate={validate}
+        initialValues={{ isArt14: false, compCheck: 0, deposits: 0, propValue: 0, payProp: 0 }}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form onSubmit={handleSubmit} noValidate>
             <Paper style={{ padding: 16 }}>
@@ -94,6 +114,7 @@ const NewForm = () => {
                     label="Birth Date 🎈"
                     dateFunsUtils={DateFnsUtils}
                     variant="outlined"
+                    required={true}
                   />
                 </Grid>
                 <Grid item xs={6}>
@@ -115,7 +136,7 @@ const NewForm = () => {
                     name="salary"
                     margin="none"
                     required={true}
-                    type="text"
+                    type="number"
                     variant="outlined"
                   />
                 </Grid>
@@ -155,35 +176,35 @@ const NewForm = () => {
                 <Grid item xs={6}>
                   <TextField
                     name="propValue"
-                    multiline
                     label="propValue"
                     margin="none"
                     type="number"
                     variant="outlined"
+                    defaultValue={0}
                   />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
                     name="deposits"
-                    multiline
-                    label="deposits"
+                    label="Deposits"
                     margin="none"
                     type="number"
                     variant="outlined"
+                    defaultValue={0}
                   />
-                </Grid>
-                <Grid item xs={6}>
-                  <TextField name="payProp" multiline label="payProp" margin="none" type="number" variant="outlined" />
                 </Grid>
                 <Grid item xs={6}>
                   <TextField
-                    name="compCheck"
-                    multiline
-                    label="compCheck"
+                    name="payProp"
+                    label="payProp"
                     margin="none"
                     type="number"
                     variant="outlined"
+                    defaultValue={0}
                   />
+                </Grid>
+                <Grid item xs={6}>
+                  <TextField name="compCheck" label="compCheck" margin="none" type="number" variant="outlined" />
                 </Grid>
                 <Grid item style={{ marginTop: 16 }}>
                   <Button type="button" variant="contained" onClick={form.reset} disabled={submitting || pristine}>
