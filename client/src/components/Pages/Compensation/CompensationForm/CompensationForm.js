@@ -52,6 +52,9 @@ const validate = values => {
   if (values.compCheck && values.compCheck < 0) {
     errors.compCheck = 'Must be real Number';
   }
+  if (values.salary && values.salary < 0) {
+    errors.compCheck = 'Must be real Number';
+  }
 
   return errors;
 };
@@ -59,7 +62,6 @@ const validate = values => {
 const NewForm = () => {
   return (
     <div style={{ padding: 16, margin: 'auto', maxWidth: 600 }}>
-      <CssBaseline />
       <Typography variant="h4" align="center" component="h1" gutterBottom>
         Compensation calculator 💵
       </Typography>

@@ -22,16 +22,22 @@ class HeaderMenu extends Component {
       );
     }
 
+    const tabelsInfo = [
+      { icon: 'group', text: 'Workers', to: '/workers' },
+      { icon: 'percent', text: 'Interest Rate', to: '/interestrate' },
+      { icon: 'chart line', text: 'Leaving Prob', to: '/leavingprob' },
+      { icon: 'female', text: 'Life Womens', to: '/lifewomens' },
+      { icon: 'male', text: 'Life Mans', to: '/lifemens' },
+    ];
+
+    const renderedTabelsInfo = tabelsInfo.map((item, index) => {
+      return <Dropdown.Item icon={item.icon} text={item.text} as={Link} to={item.to} key={index} />;
+    });
+
     const rightMenu = () => (
       <Menu.Menu position="right">
         <Dropdown item text="Tabels">
-          <Dropdown.Menu>
-            <Dropdown.Item icon="group" text="Workers" as={Link} to={'/workers'} />
-            <Dropdown.Item icon="percent" text={`Interest Rate`} as={Link} to={'/interestrate'} />
-            <Dropdown.Item icon="chart line" text={`Leaving Prob`} as={Link} to={'/leavingprob'} />
-            <Dropdown.Item icon="female" text={`Life Womens`} as={Link} to={'/lifewomens'} />
-            <Dropdown.Item icon="male" text={`Life Mans`} as={Link} to={'/lifemens'} />
-          </Dropdown.Menu>
+          <Dropdown.Menu>{renderedTabelsInfo}</Dropdown.Menu>
         </Dropdown>
       </Menu.Menu>
     );
