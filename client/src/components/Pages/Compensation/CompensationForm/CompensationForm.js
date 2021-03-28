@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'react-final-form';
 import { TextField, Checkboxes, Radios, Select, DatePicker } from 'mui-rff';
-import { Typography, Paper, Grid, Button, CssBaseline, MenuItem } from '@material-ui/core';
+import { Typography, Paper, Grid, Button, MenuItem } from '@material-ui/core';
 // Picker
 import DateFnsUtils from '@date-io/date-fns';
 

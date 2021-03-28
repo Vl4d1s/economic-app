@@ -6,12 +6,12 @@ import InterestRateTable from '../Pages/Tabels/InterestRateTable/InterestRateTab
 import LeavingProbTable from '../Pages/Tabels/LeavingProbTable/LeavingProbTable';
 import lifesMensTable from '../Pages/Tabels/lifesMensTable/lifesMensTable';
 import lifesWomensTable from '../Pages/Tabels/lifesWomensTable/lifesWomensTable';
-import Home from '../Pages/Home/Home';
+// import Home from '../Pages/Home/Home';
 
 const Routs = () => {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
+      <Route path="/" exact component={Compensation} />
       <Route path="/compensation" component={Compensation} />
       <Route path="/workers" component={WorkersTabel} />
       <Route path="/interestrate" component={InterestRateTable} />
