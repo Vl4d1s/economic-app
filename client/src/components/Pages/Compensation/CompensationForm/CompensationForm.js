@@ -1,24 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-final-form';
 import { TextField, Checkboxes, Radios, Select, DatePicker } from 'mui-rff';
-import { Typography, Paper, Grid, Button, MenuItem } from '@material-ui/core';
+import { Typography, Paper, Grid, Button, MenuItem, InputAdornment } from '@material-ui/core';
+import CompensationCalc from './CompensationCalc/CompensationCalc';
 // Picker
 import DateFnsUtils from '@date-io/date-fns';
 
-const onSubmit = async values => {
-  const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-  await sleep(300);
-  window.alert(JSON.stringify(values, 0, 2));
-};
+const currencies = [
+  {
+    value: 'NIS',
+    label: '₪',
+  },
+  {
+    value: 'USD',
+    label: '$',
+  },
+  {
+    value: 'EUR',
+    label: '€',
+  },
+  {
+    value: 'JPY',
+    label: '¥',
+  },
+];
 
 const validate = values => {
   const errors = {};
-  if (!values.firstName) {
-    errors.firstName = 'Required';
-  }
-  if (!values.lastName) {
-    errors.lastName = 'Required';
-  }
   if (!values.sex) {
     errors.sex = 'Required';
   }
@@ -31,8 +39,23 @@ const validate = values => {
   if (!values.salary) {
     errors.salary = 'Required';
   }
+  if (values.propValue !== '0' && !values.propValue) {
+    errors.propValue = 'Required';
+  }
+  if (values.deposits !== '0' && !values.deposits) {
+    errors.deposits = 'Required';
+  }
+  if (values.payProp !== '0' && !values.payProp) {
+    errors.payProp = 'Required';
+  }
+  if (values.compCheck !== '0' && !values.compCheck) {
+    errors.compCheck = 'Required';
+  }
   if (!values.birthDate) {
     errors.birthDate = 'Required';
+  }
+  if (!values.currency) {
+    errors.currency = 'Required';
   }
   if (values.isArt14 && !values.art14Percent) {
     errors.art14Percent = 'Required';
@@ -43,8 +66,8 @@ const validate = values => {
   if (values.propValue && values.propValue < 0) {
     errors.propValue = 'Must be real Number';
   }
-  if (values.deposit && values.deposit < 0) {
-    errors.deposit = 'Must be real Number';
+  if (values.deposits && values.deposits < 0) {
+    errors.depositS = 'Must be real Number';
   }
   if (values.payProp && values.payProp < 0) {
     errors.payProp = 'Must be real Number';
@@ -53,13 +76,22 @@ const validate = values => {
     errors.compCheck = 'Must be real Number';
   }
   if (values.salary && values.salary < 0) {
-    errors.compCheck = 'Must be real Number';
+    errors.salary = 'Must be real Number';
   }
 
   return errors;
 };
 
-const NewForm = () => {
+const CompensationForm = () => {
+  const [formValues, setsFormValues] = useState(null);
+
+  const onSubmit = async values => {
+    setsFormValues(values);
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+    await sleep(300);
+    window.alert(JSON.stringify(values, 0, 2));
+  };
+
   return (
     <div style={{ padding: 16, margin: 'auto', maxWidth: 600 }}>
       <Typography variant="h4" align="center" component="h1" gutterBottom>
@@ -72,41 +104,37 @@ const NewForm = () => {
       <Form
         onSubmit={onSubmit}
         validate={validate}
-        initialValues={{ isArt14: false, compCheck: 0, deposits: 0, propValue: 0, payProp: 0 }}
+        initialValues={{ isArt14: false, currency: 'NIS', payProp: '0', deposits: '0', compCheck: '0', propValue: '0' }}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form onSubmit={handleSubmit} noValidate>
             <Paper style={{ padding: 16 }}>
               <Grid container alignItems="flex-start" spacing={2} justify="center">
-                <Grid item xs={6}>
-                  <TextField
-                    label="First Name"
-                    name="firstName"
-                    margin="none"
-                    required={true}
-                    type="text"
-                    variant="outlined"
-                  />
-                </Grid>
-                <Grid item xs={6}>
-                  <TextField
-                    label="Last Name"
-                    name="lastName"
-                    margin="none"
-                    required={true}
-                    type="text"
-                    variant="outlined"
-                  />
-                </Grid>
                 <Grid item xs={12}>
                   <Select
                     name="sex"
-                    label="Sex 👨‍🦱 👩‍🦰"
+                    label="Gender 👨‍🦱 👩‍🦰"
                     formControlProps={{ margin: 'none' }}
                     required={true}
                     variant="outlined"
+                    helperText={!values.sex ? 'Please select your gender.' : ''}
                   >
                     <MenuItem value="M">Male 👨‍🦱</MenuItem>
                     <MenuItem value="F">Female 👩‍🦰</MenuItem>
+                  </Select>
+                </Grid>
+                <Grid item xs={12}>
+                  <Select
+                    name="currency"
+                    label="Currency"
+                    variant="outlined"
+                    disabled
+                    helperText={'this option will be available soon.'}
+                  >
+                    {currencies.map(option => (
+                      <MenuItem key={option.value} value={option.value}>
+                        {option.label}
+                      </MenuItem>
+                    ))}
                   </Select>
                 </Grid>
                 <Grid item xs={12}>
@@ -140,6 +168,11 @@ const NewForm = () => {
                     required={true}
                     type="number"
                     variant="outlined"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
+                      ),
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -182,7 +215,12 @@ const NewForm = () => {
                     margin="none"
                     type="number"
                     variant="outlined"
-                    defaultValue={0}
+                    required={true}
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
+                      ),
+                    }}
                   />
                 </Grid>
                 <Grid item xs={6}>
@@ -192,7 +230,12 @@ const NewForm = () => {
                     margin="none"
                     type="number"
                     variant="outlined"
-                    defaultValue={0}
+                    required={true}
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
+                      ),
+                    }}
                   />
                 </Grid>
                 <Grid item xs={6}>
@@ -202,11 +245,28 @@ const NewForm = () => {
                     margin="none"
                     type="number"
                     variant="outlined"
-                    defaultValue={0}
+                    required={true}
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
+                      ),
+                    }}
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  <TextField name="compCheck" label="compCheck" margin="none" type="number" variant="outlined" />
+                  <TextField
+                    name="compCheck"
+                    label="compCheck"
+                    margin="none"
+                    type="number"
+                    variant="outlined"
+                    required={true}
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
+                      ),
+                    }}
+                  />
                 </Grid>
                 <Grid item style={{ marginTop: 16 }}>
                   <Button type="button" variant="contained" onClick={form.reset} disabled={submitting || pristine}>
@@ -224,8 +284,9 @@ const NewForm = () => {
           </form>
         )}
       />
+      {formValues && <CompensationCalc formValues={formValues} />}
     </div>
   );
 };
 
-export default NewForm;
+export default CompensationForm;

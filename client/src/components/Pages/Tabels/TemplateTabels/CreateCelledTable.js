@@ -4,7 +4,7 @@ import CelledTable from './CelledTable/CelledTable';
 import { createApiClient } from '../../../../api';
 
 const api = createApiClient();
-const CreateCelledTable = ({ route }) => {
+const CreateCelledTable = ({ route, tableName }) => {
   const [table, setTable] = useState([]);
   const [tableKeys, setTableKeys] = useState([]);
 
@@ -18,7 +18,12 @@ const CreateCelledTable = ({ route }) => {
 
   return (
     <div>
-      <CelledTable columns={tableKeys.length > 0 ? tableKeys.length : 1} tableKeys={tableKeys} table={table} />
+      <CelledTable
+        columns={tableKeys.length > 0 ? tableKeys.length : 1}
+        tableKeys={tableKeys}
+        table={table}
+        tableName={tableName}
+      />
     </div>
   );
 };
