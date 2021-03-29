@@ -138,33 +138,45 @@ const CompensationForm = () => {
                   </Select>
                 </Grid>
                 <Grid item xs={12}>
-                  <DatePicker
+                  <TextField
                     name="birthDate"
-                    margin="normal"
                     label="Birth Date 🎈"
-                    dateFunsUtils={DateFnsUtils}
                     variant="outlined"
                     required={true}
+                    type="date"
+                    InputProps={{
+                      startAdornment: <InputAdornment position="start"></InputAdornment>,
+                    }}
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  <DatePicker
+                  <TextField
                     name="startJobDate"
-                    margin="normal"
                     label="Start Job"
-                    dateFunsUtils={DateFnsUtils}
+                    variant="outlined"
                     required={true}
+                    type="date"
+                    InputProps={{
+                      startAdornment: <InputAdornment position="start"></InputAdornment>,
+                    }}
                   />
                 </Grid>
 
                 <Grid item xs={6}>
-                  <DatePicker name="leavingDate" margin="normal" label="Leaving Date" dateFunsUtils={DateFnsUtils} />
+                  <TextField
+                    name="leavingDate"
+                    label="Leaving Date"
+                    variant="outlined"
+                    type="date"
+                    InputProps={{
+                      startAdornment: <InputAdornment position="start"></InputAdornment>,
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
                     label="Salary"
                     name="salary"
-                    margin="none"
                     required={true}
                     type="number"
                     variant="outlined"
@@ -176,11 +188,7 @@ const CompensationForm = () => {
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <Checkboxes
-                    name="isArt14"
-                    formControlProps={{ margin: 'none' }}
-                    data={{ label: 'Article14', value: true }}
-                  />
+                  <Checkboxes name="isArt14" data={{ label: 'Article14', value: true }} />
                 </Grid>
 
                 {values.isArt14 && (
@@ -188,7 +196,6 @@ const CompensationForm = () => {
                     <Radios
                       label="Article 14 %"
                       name="art14Percent"
-                      formControlProps={{ margin: 'none' }}
                       radioGroupProps={{ row: true }}
                       data={[
                         { label: '100%', value: '100' },
@@ -200,11 +207,17 @@ const CompensationForm = () => {
                 )}
                 {values.isArt14 && (
                   <Grid item xs={12}>
-                    <DatePicker
+                    <TextField
                       name="art14StartingDate"
-                      margin="none"
                       label="Article 14 Startin Date"
-                      dateFunsUtils={DateFnsUtils}
+                      type="date"
+                      variant="outlined"
+                      required={true}
+                      InputProps={{
+                        startAdornment: (
+                          <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
+                        ),
+                      }}
                     />
                   </Grid>
                 )}
@@ -212,7 +225,6 @@ const CompensationForm = () => {
                   <TextField
                     name="propValue"
                     label="propValue"
-                    margin="none"
                     type="number"
                     variant="outlined"
                     required={true}
@@ -227,7 +239,6 @@ const CompensationForm = () => {
                   <TextField
                     name="deposits"
                     label="Deposits"
-                    margin="none"
                     type="number"
                     variant="outlined"
                     required={true}
@@ -242,7 +253,6 @@ const CompensationForm = () => {
                   <TextField
                     name="payProp"
                     label="payProp"
-                    margin="none"
                     type="number"
                     variant="outlined"
                     required={true}
@@ -257,7 +267,6 @@ const CompensationForm = () => {
                   <TextField
                     name="compCheck"
                     label="compCheck"
-                    margin="none"
                     type="number"
                     variant="outlined"
                     required={true}
