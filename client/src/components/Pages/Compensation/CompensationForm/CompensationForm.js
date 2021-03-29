@@ -3,8 +3,8 @@ import { Form } from 'react-final-form';
 import { TextField, Checkboxes, Radios, Select, DatePicker } from 'mui-rff';
 import { Typography, Paper, Grid, Button, MenuItem, InputAdornment } from '@material-ui/core';
 import CompensationCalc from './CompensationCalc/CompensationCalc';
+import './CompensationForm.css';
 // Picker
-import DateFnsUtils from '@date-io/date-fns';
 
 const currencies = [
   {
