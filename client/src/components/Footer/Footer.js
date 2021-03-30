@@ -6,7 +6,7 @@ const Footer = () => (
   <div>
     <br />
     <Container fluid textAlign="center">
-      Made with ❤️ by: Vladis, Daniel, Sapir, Lihi and Inbal.
+      Made by: Vladis, Daniel, Sapir, Lihi and Inbal.
       <Image src={SCE} size="mini" spaced />
       College of engineering.
       <br />
