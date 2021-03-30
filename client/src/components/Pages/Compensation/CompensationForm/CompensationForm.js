@@ -127,7 +127,7 @@ const CompensationForm = () => {
                     name="currency"
                     label="Currency"
                     variant="outlined"
-                    disabled
+                    // disabled
                     helperText={'this option will be available soon.'}
                   >
                     {currencies.map(option => (
