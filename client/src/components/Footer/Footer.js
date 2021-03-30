@@ -1,12 +1,13 @@
-import React from "react";
-import { Segment, Container } from "semantic-ui-react";
+import React from 'react';
+import { Segment, Container } from 'semantic-ui-react';
 
 const Footer = () => (
-  <Segment>
-    <Container text textAlign="center">
-      <b>Created by:</b> Vladis, Daniel, Sapir, Lihi and Inbal 📊 📈 📉
+  <div>
+    <br />
+    <Container fluid textAlign="center">
+      <b>Created by:</b> Vladis, Daniel, Sapir, Lihi and Inbal.
     </Container>
-  </Segment>
+  </div>
 );
 
 export default Footer;
