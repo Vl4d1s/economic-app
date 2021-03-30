@@ -36,7 +36,7 @@ class HeaderMenu extends Component {
 
     const rightMenu = () => (
       <Menu.Menu position="right">
-        <Dropdown item text="Tabels">
+        <Dropdown item text="Tabels" icon="dropdown">
           <Dropdown.Menu>{renderedTabelsInfo}</Dropdown.Menu>
         </Dropdown>
       </Menu.Menu>
