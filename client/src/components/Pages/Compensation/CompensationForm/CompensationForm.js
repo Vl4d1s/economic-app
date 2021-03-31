@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form } from 'react-final-form';
 import { TextField, Checkboxes, Radios, Select, DatePicker } from 'mui-rff';
 import { Typography, Paper, Grid, Button, MenuItem, InputAdornment } from '@material-ui/core';
-import CompensationCalc from './CompensationCalc/CompensationCalc';
+import CompensationResults from './CompensationResults/CompensationResults';
 import './CompensationForm.css';
 // Picker
 
@@ -289,11 +289,11 @@ const CompensationForm = () => {
                 </Grid>
               </Grid>
             </Paper>
-            {/* <pre>{JSON.stringify(values, 0, 2)}</pre> */}
+            <pre>{JSON.stringify(values, 0, 2)}</pre>
           </form>
         )}
       />
-      {formValues && <CompensationCalc formValues={formValues} />}
+      {/* <CompensationResults /> */}
     </div>
   );
 };

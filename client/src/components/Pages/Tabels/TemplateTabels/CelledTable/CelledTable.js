@@ -5,7 +5,7 @@ import CircularLoader from '../../../../CircularLoader/CircularLoader';
 
 const CelledTable = ({ columns, tableKeys, table, tableName }) => {
   return table && table.length > 0 ? (
-    <Table columns={columns} celled compact size="small">
+    <Table columns={columns} celled compact size="small" attached celled selectable>
       <Table.Header>
         <Table.HeaderCell textAlign="center" colSpan={table.length}>
           {tableName}
