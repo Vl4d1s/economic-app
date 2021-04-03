@@ -57,11 +57,8 @@ for (let t = 0; t <= retAge; t++) {
   const DiscountRate = parseFloat(interestRateTable[t + 1].discountRate);
   const power = t + 0.5;
 
-  if (t === 0) {
-    Px = 1;
-  } else {
-    Px *= 1 - dismissalProbability - resignationProbability - dieProbability;
-  }
+  Px = t === 0 ? 1 : Px * (1 - dismissalProbability - resignationProbability - dieProbability);
+
   const Qx = dismissalProbability;
 
   const numerator = Math.pow(1 + salaryGrowthRate, power) * Px * Qx;
@@ -80,11 +77,8 @@ for (let t = 0; t <= retAge; t++) {
   const DiscountRate = parseFloat(interestRateTable[t + 1].discountRate);
   const power = t + 0.5;
 
-  if (t === 0) {
-    Px = 1;
-  } else {
-    Px *= 1 - dismissalProbability - resignationProbability - dieProbability;
-  }
+  Px = t === 0 ? 1 : Px * (1 - dismissalProbability - resignationProbability - dieProbability);
+
   const Qx = dieProbability;
 
   const numerator = Math.pow(1 + salaryGrowthRate, power) * Px * Qx;
