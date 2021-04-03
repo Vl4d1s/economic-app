@@ -25,17 +25,11 @@ function parseFloatWorkerValues(obj, valuesToParse) {
 }
 
 function main(workers) {
-  // for the array of objects.
-  if (workers && workers.length > 0) {
-    workers.map(worker => {
-      parseFloatWorkerValues(worker, ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck']);
-      calculate(worker);
-    });
-  } else {
-    // for one object coming from the Application form.
-    parseFloatWorkerValues(workers, ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck']);
-    calculate(workers);
-  }
+  const valuesToParse = ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck'];
+  workers.map(worker => {
+    parseFloatWorkerValues(worker, valuesToParse);
+    calculate(worker);
+  });
 }
 
 function calculate(worker) {
@@ -80,4 +74,4 @@ function calculate(worker) {
   console.log(finalSum);
 }
 
-main(workers[3]);
+main([workers[3]]);
