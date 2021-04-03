@@ -40,6 +40,12 @@ function calculate(worker) {
   const seniority = diffYearMonthDay(x, startJobDate).year;
   const firstCalculation = lastSalary * seniority * (1 - art14Percent);
 
+  const compensationReason = {
+    DISMISSAL: 'dismissal',
+    RESINGNATION: 'resignation',
+    DIE: 'die',
+  };
+
   function sum_name(val) {
     let Px = 0;
     let sum = 0;
@@ -54,23 +60,27 @@ function calculate(worker) {
       const DiscountRate = parseFloat(interestRateTable[t + 1].discountRate);
       const power = t + 0.5;
 
-      if (val === 'dismissal') Qx = dismissalProbability;
-      else if (val === 'resignation') Qx = resignationProbability;
-      else if (val === 'die') Qx = dieProbability;
+      if (val === compensationReason.DISMISSAL) Qx = dismissalProbability;
+      else if (val === compensationReason.RESINGNATION) Qx = resignationProbability;
+      else if (val === compensationReason.DIE) Qx = dieProbability;
 
       Px = t === 0 ? 1 : Px * (1 - dismissalProbability - resignationProbability - dieProbability);
       const numerator = Math.pow(1 + salaryGrowthRate, power) * Px * Qx;
       const denominator = Math.pow(1 + DiscountRate, power);
 
-      sum += firstCalculation * (numerator / denominator);
+      sum =
+        val === compensationReason.RESINGNATION
+          ? (sum += propValue * Px * Qx)
+          : (sum += firstCalculation * (numerator / denominator));
     }
     return sum;
   }
 
-  const sum1 = sum_name('dismissal');
-  const sum2 = sum_name('die');
+  const sum1 = sum_name(compensationReason.DISMISSAL);
+  const sum3 = sum_name(compensationReason.DIE);
+  const sum2 = sum_name(compensationReason.RESINGNATION);
 
-  const finalSum = sum1 + sum2;
+  const finalSum = sum1 + sum2 + sum3;
   console.log(finalSum);
 }
 
