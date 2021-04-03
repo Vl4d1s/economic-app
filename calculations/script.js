@@ -22,7 +22,7 @@ const getSeniority = (fistDate, secondDate) =>
 //   "sex": "M",
 //   "birthDate": "1972-08-01",
 //   "startJobDate": "2002-06-01",
-//   "salary": "24012.5",
+//   "lastSalary": "24012.5",
 //   "art14StartingDate": "",
 //   "art14Percent": "",
 //   "propValue": "323000",
@@ -45,7 +45,7 @@ worker.art14Percent = 0; // changin '' to 0 for the formula.
 const salaryGrowthRate = 0.02; // constant given by Anna.
 const retAge = w - age - 2; // Sub range: 0 - retAge
 
-const firstCalculation = parseFloat(worker.salary) * seniority * (1 - worker.art14Percent);
+const firstCalculation = parseFloat(worker.lastSalary) * seniority * (1 - worker.art14Percent);
 
 let sum1 = 0;
 let sum2 = 0;
