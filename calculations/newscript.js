@@ -19,17 +19,19 @@ function diffYearMonthDay(dt1, dt2) {
 }
 
 function parseFloatWorkerValues(obj, valuesToParse) {
-  Object.keys(obj).map(function (key, index) {
+  Object.keys(obj).map(function (key) {
     obj[key] = valuesToParse.includes(key) ? parseFloat(obj[key]) : obj[key];
   });
 }
 
 function main(workers) {
   const valuesToParse = ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck'];
-  workers.map(worker => {
-    parseFloatWorkerValues(worker, valuesToParse);
-    calculate(worker);
-  });
+  if (workers.length > 0) {
+    workers.map(worker => {
+      parseFloatWorkerValues(worker, valuesToParse);
+      calculate(worker);
+    });
+  }
 }
 
 function calculate(worker) {
@@ -44,14 +46,15 @@ function calculate(worker) {
     DISMISSAL: 'dismissal',
     RESINGNATION: 'resignation',
     DIE: 'die',
+    SUM4: 'sum4',
   };
 
-  function sum_name(val) {
+  function sumOfDismissalResignationAndDie(val, numOfIterations = w - age - 2) {
     let Px = 0;
     let sum = 0;
     let Qx = 0;
 
-    for (let t = 0; t <= w - age - 2; t++) {
+    for (let t = 0; t <= numOfIterations; t++) {
       const currentProbabilityInfo = leavingProbabilityTable[age + t + 1];
       parseFloatWorkerValues(currentProbabilityInfo, ['dismissalProbability', 'resignationProbability']);
 
@@ -73,14 +76,39 @@ function calculate(worker) {
           ? (sum += propValue * Px * Qx)
           : (sum += firstCalculation * (numerator / denominator));
     }
+
+    if (val === compensationReason.SUM4) {
+      const Qx1 = parseFloat(leavingProbabilityTable[w - 1].dismissalProbability);
+      const Qx3 = parseFloat(lifeTable[sex][w - 1]['q(x)']);
+      const Qx2 = parseFloat(leavingProbabilityTable[w - 1].resignationProbability);
+
+      const DiscountRate = parseFloat(interestRateTable[w - startJobAge].discountRate); // w?
+
+      const retCalcPart1 =
+        (firstCalculation * (Math.pow(1 + salaryGrowthRate, w - age + 0.5) * Px * Qx1)) /
+        Math.pow(1 + DiscountRate, w - age + 0.5);
+
+      const retCalcPart2 =
+        (firstCalculation * (Math.pow(1 + salaryGrowthRate, w - age - 0.5) * Px * Qx3)) /
+        Math.pow(1 + DiscountRate, w - age - 0.5);
+
+      const retCalcPart3 = propValue * Px * Qx2;
+
+      const retCalcPart4 =
+        (firstCalculation * (Math.pow(1 + salaryGrowthRate, w - age) * Px * (1 - Qx1 - Qx2 - Qx3))) /
+        Math.pow(1 + DiscountRate, w - age);
+
+      sum = retCalcPart1 + retCalcPart2 + retCalcPart3 + retCalcPart4;
+    }
     return sum;
   }
 
-  const sum1 = sum_name(compensationReason.DISMISSAL);
-  const sum3 = sum_name(compensationReason.DIE);
-  const sum2 = sum_name(compensationReason.RESINGNATION);
+  const sum1 = sumOfDismissalResignationAndDie(compensationReason.DISMISSAL);
+  const sum3 = sumOfDismissalResignationAndDie(compensationReason.DIE);
+  const sum2 = sumOfDismissalResignationAndDie(compensationReason.RESINGNATION);
+  const sum4 = sumOfDismissalResignationAndDie(compensationReason.SUM4, w - age - 1);
 
-  const finalSum = sum1 + sum2 + sum3;
+  const finalSum = sum1 + sum2 + sum3 + sum4;
   console.log(finalSum);
 }
 
