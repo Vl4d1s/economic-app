@@ -18,6 +18,7 @@ obj.map(item => {
     const newYear = year >= 0 && year <= 21 ? '20' + year : '19' + year;
     item[string] = `${newYear}-${day}-${month}`;
   }
+
 });
 
 fs.writeFile('test.json', JSON.stringify(obj), function (err) {

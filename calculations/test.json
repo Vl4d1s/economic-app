@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "1",
     "firstName": "חיים",
@@ -827,7 +827,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -859,7 +859,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -875,7 +875,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -891,7 +891,7 @@
     "art14Percent": "0",
     "propValue": "212500",
     "deposits": "24331.25",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -907,7 +907,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -939,7 +939,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -955,7 +955,7 @@
     "art14Percent": "0.72",
     "propValue": "127500",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -987,7 +987,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -1003,7 +1003,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -1019,7 +1019,7 @@
     "art14Percent": "0",
     "propValue": "212500",
     "deposits": "20400",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -1051,7 +1051,7 @@
     "art14Percent": "1",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -1067,7 +1067,7 @@
     "art14Percent": "0",
     "propValue": "67150",
     "deposits": "7543.75",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -1083,7 +1083,7 @@
     "art14Percent": "0.72",
     "propValue": "0",
     "deposits": "0",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },
@@ -1099,7 +1099,7 @@
     "art14Percent": "0",
     "propValue": "229500",
     "deposits": "17552.5",
-    "leavingDate": "2019-06-01",
+    "leavingDate": "",
     "payProp": "0",
     "compCheck": "0"
   },

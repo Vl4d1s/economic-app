@@ -5,7 +5,7 @@ const interestRateTable = require('./interestRate.json');
 
 const salaryGrowthRate = 0.02;
 const retireAge = { F: 64, M: 67 };
-const x = '2020-12-31';
+const x = '2019-12-31';
 
 function diffYearMonthDay(dt1, dt2) {
   const d1 = new Date(dt1.split('-').join(',')).getTime();
@@ -25,7 +25,7 @@ function parseFloatWorkerValues(obj, valuesToParse) {
 }
 
 function main(workers) {
-  const valuesToParse = ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck'];
+  const valuesToParse = ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck', 'art14Percent'];
   if (workers.length > 0) {
     workers.map(worker => {
       parseFloatWorkerValues(worker, valuesToParse);
@@ -35,18 +35,30 @@ function main(workers) {
 }
 
 function calculate(worker) {
-  const { sex, birthDate, startJobDate, lastSalary, art14StartingDate, propValue, art14Percent } = worker;
+  const {
+    id,
+    sex,
+    birthDate,
+    startJobDate,
+    lastSalary,
+    art14StartingDate,
+    propValue,
+    art14Percent,
+    leavingDate,
+  } = worker;
   const age = Math.floor(diffYearMonthDay(x, birthDate).year);
   const startJobAge = Math.floor(diffYearMonthDay(startJobDate, birthDate).year);
   const w = retireAge[sex];
   const seniority = diffYearMonthDay(x, startJobDate).year;
+  const totalWithoutArt14Time =
+    art14StartingDate !== '' ? Math.floor(diffYearMonthDay(art14StartingDate, startJobDate).year) : 0;
   const firstCalculation = lastSalary * seniority * (1 - art14Percent);
 
   const compensationReason = {
     DISMISSAL: 'dismissal',
     RESINGNATION: 'resignation',
     DIE: 'die',
-    SUM4: 'sum4',
+    RETIER: 'retiere',
   };
 
   function sumOfDismissalResignationAndDie(val, numOfIterations = w - age - 2) {
@@ -55,6 +67,12 @@ function calculate(worker) {
     let Qx = 0;
 
     for (let t = 0; t <= numOfIterations; t++) {
+      let art14PercentCopy = art14Percent;
+
+      art14PercentCopy = totalWithoutArt14Time <= t ? art14PercentCopy : 0;
+
+      const firstCalculation = lastSalary * seniority * (1 - art14PercentCopy);
+
       const currentProbabilityInfo = leavingProbabilityTable[age + t + 1];
       parseFloatWorkerValues(currentProbabilityInfo, ['dismissalProbability', 'resignationProbability']);
 
@@ -77,7 +95,7 @@ function calculate(worker) {
           : (sum += firstCalculation * (numerator / denominator));
     }
 
-    if (val === compensationReason.SUM4) {
+    if (val === compensationReason.RETIER) {
       const Qx1 = parseFloat(leavingProbabilityTable[w - 1].dismissalProbability);
       const Qx3 = parseFloat(lifeTable[sex][w - 1]['q(x)']);
       const Qx2 = parseFloat(leavingProbabilityTable[w - 1].resignationProbability);
@@ -100,16 +118,21 @@ function calculate(worker) {
 
       sum = retCalcPart1 + retCalcPart2 + retCalcPart3 + retCalcPart4;
     }
+
     return sum;
   }
 
-  const sum1 = sumOfDismissalResignationAndDie(compensationReason.DISMISSAL);
-  const sum3 = sumOfDismissalResignationAndDie(compensationReason.DIE);
-  const sum2 = sumOfDismissalResignationAndDie(compensationReason.RESINGNATION);
-  const sum4 = sumOfDismissalResignationAndDie(compensationReason.SUM4, w - age - 1);
+  const dismissalSum = sumOfDismissalResignationAndDie(compensationReason.DISMISSAL);
+  const dieSum = sumOfDismissalResignationAndDie(compensationReason.DIE);
+  const resignationSum = sumOfDismissalResignationAndDie(compensationReason.RESINGNATION);
+  const retiereSum = sumOfDismissalResignationAndDie(compensationReason.RETIER, w - age - 1);
+  let finalSum = dismissalSum + dieSum + resignationSum + retiereSum;
 
-  const finalSum = sum1 + sum2 + sum3 + sum4;
-  console.log(finalSum);
+  finalSum = seniority < 2 ? dismissalSum + dieSum + retiereSum : finalSum;
+  finalSum = seniority > 2 && propValue > finalSum ? propValue : finalSum;
+  finalSum = !leavingDate ? finalSum : 0;
+
+  console.log(`id:${id} finalSum: ${finalSum}`);
 }
 
-main([workers[3]]);
+main(workers);
