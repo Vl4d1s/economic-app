@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { Form } from 'react-final-form';
 import { TextField, Checkboxes, Radios, Select, DatePicker } from 'mui-rff';
 import { Typography, Paper, Grid, Button, MenuItem, InputAdornment } from '@material-ui/core';
-import CompensationResults from './CompensationResults/CompensationResults';
+// import CompensationResults from './CompensationResults/CompensationResults';
 import './CompensationForm.css';
+import calculation from '../../../../calculations/calculation';
+import { Modal } from 'semantic-ui-react';
 // Picker
 
 const currencies = [
@@ -36,8 +38,8 @@ const validate = values => {
   if (!values.startJobDate) {
     errors.startJobDate = 'Required';
   }
-  if (!values.salary) {
-    errors.salary = 'Required';
+  if (!values.lastSalary) {
+    errors.lastSalary = 'Required';
   }
   if (values.propValue !== '0' && !values.propValue) {
     errors.propValue = 'Required';
@@ -57,7 +59,7 @@ const validate = values => {
   if (!values.currency) {
     errors.currency = 'Required';
   }
-  if (values.isArt14 && !values.art14Percent) {
+  if (values.isArt14 && values.art14Percent === '0') {
     errors.art14Percent = 'Required';
   }
   if (values.isArt14 && !values.art14StartingDate) {
@@ -75,21 +77,41 @@ const validate = values => {
   if (values.compCheck && values.compCheck < 0) {
     errors.compCheck = 'Must be real Number';
   }
-  if (values.salary && values.salary < 0) {
-    errors.salary = 'Must be real Number';
+  if (values.lastSalary && values.lastSalary < 0) {
+    errors.lastSalary = 'Must be real Number';
   }
 
   return errors;
 };
 
+function exampleReducer(state, action) {
+  switch (action.type) {
+    case 'close':
+      return { open: false };
+    case 'open':
+      return { open: true, size: action.size };
+    default:
+      throw new Error('Unsupported action...');
+  }
+}
+
 const CompensationForm = () => {
   const [formValues, setsFormValues] = useState(null);
+  const [result, setResult] = useState(null);
+
+  const [state, dispatch] = React.useReducer(exampleReducer, {
+    open: false,
+    size: undefined,
+  });
+  const { open, size } = state;
 
   const onSubmit = async values => {
     setsFormValues(values);
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
     await sleep(300);
-    window.alert(JSON.stringify(values, 0, 2));
+    setResult(calculation([values]));
+    dispatch({ type: 'open', size: 'tiny' });
+    // window.alert(JSON.stringify(values, 0, 2));
   };
 
   return (
@@ -104,7 +126,17 @@ const CompensationForm = () => {
       <Form
         onSubmit={onSubmit}
         validate={validate}
-        initialValues={{ isArt14: false, currency: 'NIS', payProp: '0', deposits: '0', compCheck: '0', propValue: '0' }}
+        initialValues={{
+          isArt14: false,
+          currency: 'NIS',
+          payProp: '0',
+          deposits: '0',
+          compCheck: '0',
+          propValue: '0',
+          art14Percent: '0',
+          leavingDate: '',
+          art14StartingDate: '',
+        }}
         render={({ handleSubmit, form, submitting, pristine, values }) => (
           <form onSubmit={handleSubmit} noValidate>
             <Paper style={{ padding: 16 }}>
@@ -176,7 +208,7 @@ const CompensationForm = () => {
                 <Grid item xs={12}>
                   <TextField
                     label="Salary"
-                    name="salary"
+                    name="lastSalary"
                     required={true}
                     type="number"
                     variant="outlined"
@@ -198,9 +230,9 @@ const CompensationForm = () => {
                       name="art14Percent"
                       radioGroupProps={{ row: true }}
                       data={[
-                        { label: '100%', value: '100' },
-                        { label: '72%', value: '72' },
-                        { label: '50%', value: '50' },
+                        { label: '100%', value: '1' },
+                        { label: '72%', value: '0.72' },
+                        { label: '50%', value: '0.5' },
                       ]}
                     />
                   </Grid>
@@ -289,11 +321,25 @@ const CompensationForm = () => {
                 </Grid>
               </Grid>
             </Paper>
-            <pre>{JSON.stringify(values, 0, 2)}</pre>
+            {/* <pre>{JSON.stringify(values, 0, 2)}</pre> */}
           </form>
         )}
       />
-      {/* <CompensationResults /> */}
+      {result && (
+        <>
+          <Modal size={size} open={open} onClose={() => dispatch({ type: 'close' })}>
+            <Modal.Header>Your result:</Modal.Header>
+            <Modal.Content>
+              <p>Your compensation results: {result}</p>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button positive onClick={() => dispatch({ type: 'close' })}>
+                Ok
+              </Button>
+            </Modal.Actions>
+          </Modal>
+        </>
+      )}
     </div>
   );
 };

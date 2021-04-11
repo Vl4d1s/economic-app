@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Icon, Modal } from 'semantic-ui-react';
+import { Button, Modal } from 'semantic-ui-react';
 
 function exampleReducer(state, action) {
   switch (action.type) {
