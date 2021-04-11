@@ -109,7 +109,7 @@ const CompensationForm = () => {
     setsFormValues(values);
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
     await sleep(300);
-    setResult(calculation([values]));
+    await setResult(calculation([values]));
     dispatch({ type: 'open', size: 'tiny' });
     // window.alert(JSON.stringify(values, 0, 2));
   };
@@ -259,7 +259,6 @@ const CompensationForm = () => {
                     label="propValue"
                     type="number"
                     variant="outlined"
-                    required={true}
                     InputProps={{
                       startAdornment: (
                         <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
@@ -273,7 +272,6 @@ const CompensationForm = () => {
                     label="Deposits"
                     type="number"
                     variant="outlined"
-                    required={true}
                     InputProps={{
                       startAdornment: (
                         <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
@@ -287,7 +285,6 @@ const CompensationForm = () => {
                     label="payProp"
                     type="number"
                     variant="outlined"
-                    required={true}
                     InputProps={{
                       startAdornment: (
                         <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
@@ -301,7 +298,6 @@ const CompensationForm = () => {
                     label="compCheck"
                     type="number"
                     variant="outlined"
-                    required={true}
                     InputProps={{
                       startAdornment: (
                         <InputAdornment position="start">{values.currency ? values.currency : null}</InputAdornment>
@@ -321,7 +317,7 @@ const CompensationForm = () => {
                 </Grid>
               </Grid>
             </Paper>
-            {/* <pre>{JSON.stringify(values, 0, 2)}</pre> */}
+            <pre>{JSON.stringify(values, 0, 2)}</pre>
           </form>
         )}
       />

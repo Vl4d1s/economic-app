@@ -19,9 +19,12 @@ function diffYearMonthDay(dt1, dt2) {
 }
 
 function parseFloatWorkerValues(obj, valuesToParse) {
-  Object.keys(obj).map(function (key) {
-    obj[key] = valuesToParse.includes(key) && typeof obj[key] === 'string' ? parseFloat(obj[key]) : obj[key];
-  });
+  if (obj) {
+    Object.keys(obj).map(function (key) {
+      console.log(typeof obj[key]);
+      obj[key] = valuesToParse.includes(key) && typeof obj[key] === 'string' ? parseFloat(obj[key]) : obj[key];
+    });
+  }
 }
 
 function main(workers) {
