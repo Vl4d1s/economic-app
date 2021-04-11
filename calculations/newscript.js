@@ -5,7 +5,7 @@ const interestRateTable = require('./interestRate.json');
 
 const salaryGrowthRate = 0.02;
 const retireAge = { F: 64, M: 67 };
-const x = '2019-12-31';
+const x = '2020-12-31';
 
 function diffYearMonthDay(dt1, dt2) {
   const d1 = new Date(dt1.split('-').join(',')).getTime();
@@ -51,7 +51,7 @@ function calculate(worker) {
   const w = retireAge[sex];
   const seniority = diffYearMonthDay(x, startJobDate).year;
   const totalWithoutArt14Time =
-    art14StartingDate !== '' ? Math.floor(diffYearMonthDay(art14StartingDate, startJobDate).year) : 0;
+    art14StartingDate !== '' ? Math.round(diffYearMonthDay(art14StartingDate, startJobDate).year) : 0;
   const firstCalculation = lastSalary * seniority * (1 - art14Percent);
 
   const compensationReason = {
@@ -67,9 +67,7 @@ function calculate(worker) {
     let Qx = 0;
 
     for (let t = 0; t <= numOfIterations; t++) {
-      let art14PercentCopy = art14Percent;
-
-      art14PercentCopy = totalWithoutArt14Time <= t ? art14PercentCopy : 0;
+      const art14PercentCopy = totalWithoutArt14Time < t ? art14Percent : 0;
 
       const firstCalculation = lastSalary * seniority * (1 - art14PercentCopy);
 
@@ -100,7 +98,7 @@ function calculate(worker) {
       const Qx3 = parseFloat(lifeTable[sex][w - 1]['q(x)']);
       const Qx2 = parseFloat(leavingProbabilityTable[w - 1].resignationProbability);
 
-      const DiscountRate = parseFloat(interestRateTable[w - startJobAge].discountRate); // w?
+      const DiscountRate = parseFloat(interestRateTable[w - startJobAge].discountRate);
 
       const retCalcPart1 =
         (firstCalculation * (Math.pow(1 + salaryGrowthRate, w - age + 0.5) * Px * Qx1)) /
@@ -131,8 +129,9 @@ function calculate(worker) {
   finalSum = seniority < 2 ? dismissalSum + dieSum + retiereSum : finalSum;
   finalSum = seniority > 2 && propValue > finalSum ? propValue : finalSum;
   finalSum = !leavingDate ? finalSum : 0;
+  finalSum = age > retireAge[sex] ? seniority * lastSalary : finalSum;
 
   console.log(`id:${id} finalSum: ${finalSum}`);
 }
 
-main(workers);
+main([workers[18]]);
