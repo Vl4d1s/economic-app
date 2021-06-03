@@ -2,6 +2,8 @@ const workers = require('./tabels/workers.json');
 const lifeTable = require('./tabels/lifeTable.json');
 const leavingProbabilityTable = require('./tabels/leavingProb.json');
 const interestRateTable = require('./tabels/interestRate.json');
+const assets = require('./tabels/assets.json');
+const compensation = require('./tabels/compensation.json');
 
 const salaryGrowthRate = 0.02;
 const retireAge = { F: 64, M: 67 };
@@ -21,37 +23,32 @@ function diffYearMonthDay(dt1, dt2) {
 function parseFloatWorkerValues(obj, valuesToParse) {
   if (obj) {
     Object.keys(obj).map(function (key) {
-      console.log(typeof obj[key]);
       obj[key] = valuesToParse.includes(key) && typeof obj[key] === 'string' ? parseFloat(obj[key]) : obj[key];
     });
   }
 }
 
-function main(workers) {
+function compensationCalculate(workers) {
   const valuesToParse = ['lastSalary', 'propValue', 'deposits', 'payProp', 'compCheck', 'art14Percent'];
   if (workers.length > 1) {
+    const compensationArray = [];
     workers.map(worker => {
       parseFloatWorkerValues(worker, valuesToParse);
-      calculate(worker);
+      const compensation = calculate(worker);
+      const temp = { id: worker.id, value: compensation };
+      compensationArray.push(temp);
     });
+    return compensationArray;
   } else if (workers.length === 1) {
     parseFloatWorkerValues(workers[0], valuesToParse);
-    return calculate(workers[0]);
+    const compensation = calculate(workers[0]);
+    return [{ id: workers[0].id, value: compensation }];
   }
 }
 
 function calculate(worker) {
-  const {
-    id,
-    sex,
-    birthDate,
-    startJobDate,
-    lastSalary,
-    art14StartingDate,
-    propValue,
-    art14Percent,
-    leavingDate,
-  } = worker;
+  const { id, sex, birthDate, startJobDate, lastSalary, art14StartingDate, propValue, art14Percent, leavingDate } =
+    worker;
   const age = Math.floor(diffYearMonthDay(x, birthDate).year);
   const startJobAge = Math.floor(diffYearMonthDay(startJobDate, birthDate).year);
   const w = retireAge[sex];
@@ -122,7 +119,6 @@ function calculate(worker) {
 
       sum = retCalcPart1 + retCalcPart2 + retCalcPart3 + retCalcPart4;
     }
-
     return sum;
   }
 
@@ -137,10 +133,47 @@ function calculate(worker) {
   finalSum = !leavingDate ? finalSum : 0;
   finalSum = age > retireAge[sex] ? seniority * lastSalary : finalSum;
 
-  // console.log(`id:${id} finalSum: ${finalSum}`);
   return finalSum;
 }
 
-export default main;
+const calcActuaryFactor = workers => {
+  const actuaryFactorArray = [];
+  const compensationArray = compensationCalculate(workers);
 
-// main([workers[0]]);
+  for (let i = 0; i < compensationArray.length; i++) {
+    const { lastSalary, startJobDate, art14Percent } = workers[i];
+    const seniority = diffYearMonthDay(x, startJobDate).year;
+    let actuaryFactor = 0;
+
+    const compensationValue = compensationArray[i].value;
+    const numerator = compensationValue;
+    const denominator = lastSalary * seniority * (1 - art14Percent);
+
+    if (numerator && denominator) actuaryFactor = numerator / denominator;
+
+    const id = compensationArray[i].id;
+    actuaryFactorArray.push({ id, value: actuaryFactor });
+  }
+  return actuaryFactorArray;
+};
+
+const calcNo1 = workers => {
+  const currentServiceCostArray = [];
+  const actuaryFactorArray = calcActuaryFactor(workers);
+
+  for (let i = 0; i < actuaryFactorArray.length; i++) {
+    const { id, lastSalary, art14Percent, leavingDate } = workers[i];
+    const actuaryFactor = actuaryFactorArray[i].value;
+    const isWorking = leavingDate ? 0 : 1;
+    const currentServiceCost = actuaryFactor * (1 - art14Percent) * lastSalary * isWorking;
+
+    currentServiceCostArray.push({ id, value: currentServiceCost });
+  }
+
+  return currentServiceCostArray;
+};
+
+calcNo1([workers[54]]);
+
+// calcActuaryFactor(workers);
+// export default compensationCalculate
