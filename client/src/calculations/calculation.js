@@ -141,7 +141,7 @@ const calcActuaryFactor = workers => {
   const compensationArray = compensationCalculate(workers);
 
   for (let i = 0; i < compensationArray.length; i++) {
-    const { lastSalary, startJobDate, art14Percent } = workers[i];
+    const { id, lastSalary, startJobDate, art14Percent } = workers[i];
     const seniority = diffYearMonthDay(x, startJobDate).year;
     let actuaryFactor = 0;
 
@@ -151,7 +151,6 @@ const calcActuaryFactor = workers => {
 
     if (numerator && denominator) actuaryFactor = numerator / denominator;
 
-    const id = compensationArray[i].id;
     actuaryFactorArray.push({ id, value: actuaryFactor });
   }
   return actuaryFactorArray;
@@ -173,7 +172,80 @@ const calcNo1 = workers => {
   return currentServiceCostArray;
 };
 
-calcNo1([workers[54]]);
+const serviceExpectancyCalculation = worker => {
+  const { sex, birthDate } = worker;
+  const age = Math.floor(diffYearMonthDay(x, birthDate).year);
+  const w = retireAge[sex];
+  let sumPx = 0;
+  let Px = 0;
 
+  for (let t = 0; t <= w - age - 1; t++) {
+    const currentProbabilityInfo = leavingProbabilityTable[age + t + 1];
+    parseFloatWorkerValues(currentProbabilityInfo, ['dismissalProbability', 'resignationProbability']);
+
+    const { dismissalProbability, resignationProbability } = currentProbabilityInfo;
+    const dieProbability = parseFloat(lifeTable[sex][age + t + 1]['q(x)']);
+
+    Px = t === 0 ? 1 : Px * (1 - dismissalProbability - resignationProbability - dieProbability);
+    sumPx += Px;
+  }
+  return w - age - 1 < 0 ? 1 : Math.round(sumPx); // serviceExpectancy 0, id:49 gets sumPx of zero if Px = 0
+};
+
+const interestRateCalculation = workers => {
+  const interestRateArray = [];
+  for (let i = 0; i < workers.length; i++) {
+    const { id } = workers[i];
+    const serviceExpectancy = serviceExpectancyCalculation(workers[i]);
+    parseFloatWorkerValues(interestRateTable[serviceExpectancy], ['discountRate']);
+    const discountRate = interestRateTable[serviceExpectancy].discountRate;
+    interestRateArray.push({ id, value: discountRate });
+  }
+  return interestRateArray;
+};
+
+const calcNo2 = workers => {
+  const interestCostArray = [];
+  const currentServiceCostArray = calcNo1(workers);
+  const interestRateArray = interestRateCalculation(workers);
+
+  for (let i = 0; i < workers.length; i++) {
+    const { payProp, id, firstName } = workers[i];
+    const currentServiceCost = currentServiceCostArray[i].value;
+    const compensationValue = parseFloat(compensation[i].value);
+    const interestRate = interestRateArray[i].value;
+    // { id: '3', value: -852.6099999999997, firstName: 'מאיר' },
+    const interestCost = compensationValue * interestRate + (currentServiceCost - payProp) * (interestRate / 2);
+    interestCostArray.push({ id, value: interestCost });
+  }
+
+  return interestCostArray;
+};
+
+const calcNo3 = workers => {
+  const ActuarialProfitLossArray = [];
+  const compensationArray = compensationCalculate(workers);
+  const currentServiceCostArray = calcNo1(workers);
+  const interestRateArray = interestRateCalculation(workers);
+
+  for (let i = 0; i < workers.length; i++) {
+    const { id, payProp } = workers[i];
+    const compensationTable = parseFloat(compensation[i].value);
+    const currentServiceCost = currentServiceCostArray[i].value;
+    const compensationValue = compensationArray[i].value;
+    const interestRate = interestRateArray[i].value;
+
+    const ActuarialProfitLoss = compensationValue - compensationTable - currentServiceCost - interestRate + payProp;
+    ActuarialProfitLossArray.push({ id, value: ActuarialProfitLoss });
+  }
+
+  return ActuarialProfitLossArray;
+};
+
+console.log(calcNo3(workers));
+// console.log(calcNo2([workers[2]]));
+// console.log(calcNo2(workers));
+// console.log(interestRateCalculation(workers));
+// calcNo1([workers[54]]);
 // calcActuaryFactor(workers);
 // export default compensationCalculate
