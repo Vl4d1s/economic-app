@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const workers = require('./tabels/workers.json');
 const lifeTable = require('./tabels/lifeTable.json');
 const leavingProbabilityTable = require('./tabels/leavingProb.json');
@@ -47,8 +49,7 @@ function compensationCalculate(workers) {
 }
 
 function calculate(worker) {
-  const { id, sex, birthDate, startJobDate, lastSalary, art14StartingDate, propValue, art14Percent, leavingDate } =
-    worker;
+  const { sex, birthDate, startJobDate, lastSalary, art14StartingDate, propValue, art14Percent, leavingDate } = worker;
   const age = Math.floor(diffYearMonthDay(x, birthDate).year);
   const startJobAge = Math.floor(diffYearMonthDay(startJobDate, birthDate).year);
   const w = retireAge[sex];
@@ -162,7 +163,7 @@ const calcNo1 = workers => {
 
   for (let i = 0; i < actuaryFactorArray.length; i++) {
     const { id, lastSalary, art14Percent, leavingDate } = workers[i];
-    const actuaryFactor = actuaryFactorArray[i].value;
+    const actuaryFactor = !leavingDate ? actuaryFactorArray[i].value : 1;
     const isWorking = leavingDate ? 0 : 1;
     const currentServiceCost = actuaryFactor * (1 - art14Percent) * lastSalary * isWorking;
 
@@ -210,12 +211,14 @@ const calcNo2 = workers => {
   const interestRateArray = interestRateCalculation(workers);
 
   for (let i = 0; i < workers.length; i++) {
-    const { payProp, id, firstName } = workers[i];
+    const { payProp, id, compCheck } = workers[i];
     const currentServiceCost = currentServiceCostArray[i].value;
     const compensationValue = parseFloat(compensation[i].value);
     const interestRate = interestRateArray[i].value;
     // { id: '3', value: -852.6099999999997, firstName: 'מאיר' },
-    const interestCost = compensationValue * interestRate + (currentServiceCost - payProp) * (interestRate / 2);
+    const interestCost =
+      compensationValue * interestRate +
+      (currentServiceCost - parseFloat(payProp) - parseFloat(compCheck)) * (interestRate / 2);
     interestCostArray.push({ id, value: interestCost });
   }
 
@@ -229,13 +232,19 @@ const calcNo3 = workers => {
   const interestRateArray = interestRateCalculation(workers);
 
   for (let i = 0; i < workers.length; i++) {
-    const { id, payProp } = workers[i];
+    const { id, payProp, compCheck } = workers[i];
     const compensationTable = parseFloat(compensation[i].value);
     const currentServiceCost = currentServiceCostArray[i].value;
     const compensationValue = compensationArray[i].value;
     const interestRate = interestRateArray[i].value;
 
-    const ActuarialProfitLoss = compensationValue - compensationTable - currentServiceCost - interestRate + payProp;
+    const ActuarialProfitLoss =
+      parseFloat(compensationValue) -
+      compensationTable -
+      currentServiceCost -
+      parseFloat(interestRate) +
+      parseFloat(payProp) +
+      parseFloat(compCheck);
     ActuarialProfitLossArray.push({ id, value: ActuarialProfitLoss });
   }
 
@@ -264,13 +273,13 @@ const calcNo5 = workers => {
   const yieldProgramAssetsArray = calcNo4(workers);
 
   for (let i = 0; i < workers.length; i++) {
-    const { id, propValue, deposits, leavingDate, payProp } = workers[i];
+    const { id, propValue, lastSalary, leavingDate, payProp } = workers[i];
     const workerYieldProgramAssets = yieldProgramAssetsArray[i].value;
     const oppeningAsset = parseFloat(assets[i].value);
-    const isLeaving = !leavingDate ? 0 : parseFloat(deposits);
+    const propertyValue = !leavingDate ? 0 : parseFloat(propValue);
 
-    fairValueAssets =
-      parseFloat(propValue) - oppeningAsset - workerYieldProgramAssets - parseFloat(deposits) + parseFloat(payProp);
+    const fairValueAssets =
+      propertyValue - oppeningAsset - workerYieldProgramAssets - parseFloat(lastSalary) + parseFloat(payProp);
 
     fairValueAssetsArray.push({ id, value: fairValueAssets });
   }
@@ -278,10 +287,61 @@ const calcNo5 = workers => {
   return fairValueAssetsArray;
 };
 
-console.log(calcNo5(workers));
+const allData = workers => {
+  const calcNo1Array = calcNo1(workers);
+  const calcNo2Array = calcNo2(workers);
+  const calcNo3Array = calcNo3(workers);
+  const calcNo4Array = calcNo4(workers);
+  const calcNo5Array = calcNo5(workers);
+  const calcActuaryFactorArray = calcActuaryFactor(workers);
+  const compensationArray = compensationCalculate(workers);
+  const commitmentArray = [];
+  const assetsArray = [];
+
+  for (let i = 0; i < workers.length; i++) {
+    const { id, payProp, compCheck, deposits } = workers[i];
+    const hackathonValue = compensationArray[i].value;
+    const oppeningAsset = parseFloat(assets[i].value);
+    const compensationValue = parseFloat(compensation[i].value);
+    const calcNo1Value = calcNo1Array[i].value;
+    const calcNo2Value = calcNo2Array[i].value;
+    const calcNo3Value = calcNo3Array[i].value;
+    const calcNo4Value = calcNo4Array[i].value;
+    const calcNo5Value = calcNo5Array[i].value;
+    const calcActuaryFactorValue = calcActuaryFactorArray[i].value;
+    const benefits = parseFloat(payProp) + parseFloat(compCheck);
+
+    commitmentArray.push({
+      id,
+      compensationValue,
+      calcNo1Value,
+      calcNo2Value,
+      benefits,
+      calcNo3Value,
+      hackathonValue,
+      calcActuaryFactorValue,
+    });
+
+    assetsArray.push({ id, oppeningAsset, calcNo4Value, deposits, payProp, calcNo5Value, hackathonValue });
+  }
+
+  fs.writeFile('commitment.json', JSON.stringify(commitmentArray), function (err) {
+    if (err) throw err;
+    console.log('complete!');
+  });
+
+  fs.writeFile('assets.json', JSON.stringify(assetsArray), function (err) {
+    if (err) throw err;
+    console.log('complete!');
+  });
+  return assetsArray;
+};
+
+// console.log(calcNo1(workers));
+
 // console.log(calcNo2([workers[2]]));
 // console.log(calcNo2(workers));
 // console.log(interestRateCalculation(workers));
 // calcNo1([workers[54]]);
-// calcActuaryFactor(workers);
+console.log(calcActuaryFactor(workers));
 // export default compensationCalculate

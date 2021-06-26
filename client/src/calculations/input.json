@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "1",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -7012.5,
+    "hackathonValue": 8619.884741799702
+  },
+  {
+    "id": "2",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -21887.5,
+    "hackathonValue": 29936.26383601385
+  },
+  {
+    "id": "3",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 11500,
+    "payProp": 467400,
+    "calcNo5Value": 808357.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "4",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2585.46,
+    "deposits": 10200,
+    "payProp": 0,
+    "calcNo5Value": -112785.46,
+    "hackathonValue": 154822.5279741033
+  },
+  {
+    "id": "5",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -11793.75,
+    "hackathonValue": 0
+  },
+  {
+    "id": "6",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 8000,
+    "payProp": 229600,
+    "calcNo5Value": 366557.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "7",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -24721.807291667,
+    "hackathonValue": 6683.12271858435
+  },
+  {
+    "id": "8",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2460,
+    "deposits": 5000,
+    "payProp": 196800,
+    "calcNo5Value": 305524.625,
+    "hackathonValue": 0
+  },
+  {
+    "id": "9",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -10943.75,
+    "hackathonValue": 4389.138760017691
+  },
+  {
+    "id": "10",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -8606.25,
+    "hackathonValue": 7134.327530249291
+  },
+  {
+    "id": "11",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2912.1625,
+    "deposits": 24012.5,
+    "payProp": 0,
+    "calcNo5Value": -126924.6625,
+    "hackathonValue": 361750.97127250815
+  },
+  {
+    "id": "12",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -6481.25,
+    "hackathonValue": 2551.2805822472947
+  },
+  {
+    "id": "13",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -25606.25,
+    "hackathonValue": 259305.99930206375
+  },
+  {
+    "id": "14",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 6000,
+    "payProp": 143500,
+    "calcNo5Value": 202470,
+    "hackathonValue": 0
+  },
+  {
+    "id": "15",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -34000,
+    "hackathonValue": 72498.72784620586
+  },
+  {
+    "id": "16",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9137.5,
+    "hackathonValue": 127500
+  },
+  {
+    "id": "17",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -18168.75,
+    "hackathonValue": 76092.54799010682
+  },
+  {
+    "id": "18",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -22950,
+    "hackathonValue": 44783.763960239325
+  },
+  {
+    "id": "19",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -22418.75,
+    "hackathonValue": 42500
+  },
+  {
+    "id": "20",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 8000,
+    "payProp": 82000,
+    "calcNo5Value": 72863.75,
+    "hackathonValue": 0
+  },
+  {
+    "id": "21",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20825,
+    "hackathonValue": 52190.256453083646
+  },
+  {
+    "id": "22",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -51000,
+    "hackathonValue": 253553.2549816378
+  },
+  {
+    "id": "23",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 205000,
+    "calcNo5Value": 400412.255208333,
+    "hackathonValue": 0
+  },
+  {
+    "id": "24",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -25500,
+    "hackathonValue": 13040.106053109093
+  },
+  {
+    "id": "25",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -8606.25,
+    "hackathonValue": 17933.886629941793
+  },
+  {
+    "id": "26",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -22175.348958333,
+    "hackathonValue": 153000
+  },
+  {
+    "id": "27",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -11262.5,
+    "hackathonValue": 25376.99588612293
+  },
+  {
+    "id": "28",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2833.758125,
+    "deposits": 24012.5,
+    "payProp": 0,
+    "calcNo5Value": -126846.258125,
+    "hackathonValue": 212500
+  },
+  {
+    "id": "29",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20610.020833333,
+    "hackathonValue": 0
+  },
+  {
+    "id": "30",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9137.5,
+    "hackathonValue": 9279.270196354728
+  },
+  {
+    "id": "31",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -7238.8125,
+    "hackathonValue": 4926.886966179589
+  },
+  {
+    "id": "32",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2676.94125,
+    "deposits": 17637.5,
+    "payProp": 0,
+    "calcNo5Value": -120314.44125,
+    "hackathonValue": 176605.4937594515
+  },
+  {
+    "id": "33",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2460,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -109127.1875,
+    "hackathonValue": 74808.75713619034
+  },
+  {
+    "id": "34",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -27200,
+    "hackathonValue": 265527.56248080847
+  },
+  {
+    "id": "35",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9350,
+    "hackathonValue": 0
+  },
+  {
+    "id": "36",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -7012.5,
+    "hackathonValue": 17545.31325791617
+  },
+  {
+    "id": "37",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -17106.25,
+    "hackathonValue": 139071.04411819158
+  },
+  {
+    "id": "38",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -14450,
+    "hackathonValue": 28514.148705745276
+  },
+  {
+    "id": "39",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9668.75,
+    "hackathonValue": 13048.431781658155
+  },
+  {
+    "id": "40",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -6746.875,
+    "hackathonValue": 0
+  },
+  {
+    "id": "41",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -12112.5,
+    "hackathonValue": 68000
+  },
+  {
+    "id": "42",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -7543.75,
+    "hackathonValue": 4650.109816378718
+  },
+  {
+    "id": "43",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -12325,
+    "hackathonValue": 4055.624555991405
+  },
+  {
+    "id": "44",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -12803.125,
+    "hackathonValue": 26607.446158779
+  },
+  {
+    "id": "45",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -6746.875,
+    "hackathonValue": 5210.341225155416
+  },
+  {
+    "id": "46",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2133.7775,
+    "deposits": 14450,
+    "payProp": 0,
+    "calcNo5Value": -116583.7775,
+    "hackathonValue": 331198.90223562863
+  },
+  {
+    "id": "47",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9137.5,
+    "hackathonValue": 17540.104509540008
+  },
+  {
+    "id": "48",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -14662.5,
+    "hackathonValue": 150859.48698720513
+  },
+  {
+    "id": "49",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 49200,
+    "calcNo5Value": 93922.75,
+    "hackathonValue": 128536.11034109058
+  },
+  {
+    "id": "50",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -24012.5,
+    "hackathonValue": 5964.938245632611
+  },
+  {
+    "id": "51",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9510.4375,
+    "hackathonValue": 0
+  },
+  {
+    "id": "52",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -25500,
+    "hackathonValue": 0
+  },
+  {
+    "id": "53",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -21356.25,
+    "hackathonValue": 0
+  },
+  {
+    "id": "54",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -15512.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "55",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -34000,
+    "hackathonValue": 0
+  },
+  {
+    "id": "56",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 24331.25,
+    "payProp": 0,
+    "calcNo5Value": 85638.75,
+    "hackathonValue": 0
+  },
+  {
+    "id": "57",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -28846.875,
+    "hackathonValue": 0
+  },
+  {
+    "id": "58",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20825,
+    "hackathonValue": 0
+  },
+  {
+    "id": "59",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -13387.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "60",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": 116439.375,
+    "hackathonValue": 0
+  },
+  {
+    "id": "61",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 0,
+    "payProp": 102500,
+    "calcNo5Value": 106129.6875,
+    "hackathonValue": 0
+  },
+  {
+    "id": "62",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -16575,
+    "hackathonValue": 0
+  },
+  {
+    "id": "63",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -15512.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "64",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 1810.0000000000002,
+    "deposits": 20400,
+    "payProp": 0,
+    "calcNo5Value": 90290,
+    "hackathonValue": 384262.8336755647
+  },
+  {
+    "id": "65",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2600,
+    "deposits": 6000,
+    "payProp": 278800,
+    "calcNo5Value": 447562.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "66",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20825,
+    "hackathonValue": 0
+  },
+  {
+    "id": "67",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2460,
+    "deposits": 7543.75,
+    "payProp": 0,
+    "calcNo5Value": -42853.75,
+    "hackathonValue": 0
+  },
+  {
+    "id": "68",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -29750,
+    "hackathonValue": 0
+  },
+  {
+    "id": "69",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2460,
+    "deposits": 17552.5,
+    "payProp": 0,
+    "calcNo5Value": 109487.5,
+    "hackathonValue": 0
+  },
+  {
+    "id": "70",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -16150,
+    "hackathonValue": 0
+  },
+  {
+    "id": "71",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -24012.5,
+    "hackathonValue": 16345.667851076305
+  },
+  {
+    "id": "72",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2960.1,
+    "deposits": 34000,
+    "payProp": 0,
+    "calcNo5Value": -136960.1,
+    "hackathonValue": 474561.7785780083
+  },
+  {
+    "id": "73",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -13600,
+    "hackathonValue": 119383.43713843067
+  },
+  {
+    "id": "74",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2735.80285,
+    "deposits": 16269,
+    "payProp": 0,
+    "calcNo5Value": -119004.80285000001,
+    "hackathonValue": 226074.93686114418
+  },
+  {
+    "id": "75",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2721.1256875,
+    "deposits": 15108.75,
+    "payProp": 0,
+    "calcNo5Value": -117829.8756875,
+    "hackathonValue": 187696.2682692107
+  },
+  {
+    "id": "76",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2762.254,
+    "deposits": 18360,
+    "payProp": 0,
+    "calcNo5Value": -121122.254,
+    "hackathonValue": 205891.4848026336
+  },
+  {
+    "id": "77",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -14535,
+    "hackathonValue": 4073.129722798014
+  },
+  {
+    "id": "78",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -18275,
+    "hackathonValue": 0
+  },
+  {
+    "id": "79",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -11475,
+    "hackathonValue": 7801.196246048475
+  },
+  {
+    "id": "80",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -21675,
+    "hackathonValue": 5086.689579193717
+  },
+  {
+    "id": "81",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -14140.8125,
+    "hackathonValue": 297500
+  },
+  {
+    "id": "82",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20825,
+    "hackathonValue": 6813.691262159327
+  },
+  {
+    "id": "83",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 46000,
+    "calcNo5Value": 79628.125,
+    "hackathonValue": 0
+  },
+  {
+    "id": "84",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -19975,
+    "hackathonValue": 6168.691054859897
+  },
+  {
+    "id": "85",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -8075,
+    "hackathonValue": 30382.817453144038
+  },
+  {
+    "id": "86",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -15657,
+    "hackathonValue": 25517.213508788325
+  },
+  {
+    "id": "87",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -21887.5,
+    "hackathonValue": 51702.07312226099
+  },
+  {
+    "id": "88",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -18700,
+    "hackathonValue": 13184.08151452681
+  },
+  {
+    "id": "89",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 14000,
+    "payProp": 295200,
+    "calcNo5Value": 460845,
+    "hackathonValue": 0
+  },
+  {
+    "id": "90",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -19125,
+    "hackathonValue": 58934.61228423828
+  },
+  {
+    "id": "91",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2573.9595,
+    "deposits": 9265,
+    "payProp": 0,
+    "calcNo5Value": -111838.9595,
+    "hackathonValue": 69954.14938226056
+  },
+  {
+    "id": "92",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -8786.875,
+    "hackathonValue": 2973.122737488515
+  },
+  {
+    "id": "93",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -7357.06830375,
+    "hackathonValue": 3602.2797349436582
+  },
+  {
+    "id": "94",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2659.03,
+    "deposits": 10200,
+    "payProp": 0,
+    "calcNo5Value": -112859.03,
+    "hackathonValue": 170000
+  },
+  {
+    "id": "95",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -11900,
+    "hackathonValue": 3961.4988815684583
+  },
+  {
+    "id": "96",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -16575,
+    "hackathonValue": 14206.833175055732
+  },
+  {
+    "id": "97",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -12580,
+    "hackathonValue": 11057.363505844742
+  },
+  {
+    "id": "98",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2670.9818999999998,
+    "deposits": 17153,
+    "payProp": 0,
+    "calcNo5Value": -119823.9819,
+    "hackathonValue": 111029.98263719735
+  },
+  {
+    "id": "99",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2540.220625,
+    "deposits": 20888.75,
+    "payProp": 0,
+    "calcNo5Value": -123428.970625,
+    "hackathonValue": 297623.247283465
+  },
+  {
+    "id": "100",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -34000,
+    "hackathonValue": 9410.802570955013
+  },
+  {
+    "id": "101",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -23481.25,
+    "hackathonValue": 163927.14607315656
+  },
+  {
+    "id": "102",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -15725,
+    "hackathonValue": 11527.749240625779
+  },
+  {
+    "id": "103",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20134.375,
+    "hackathonValue": 14492.006953086735
+  },
+  {
+    "id": "104",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -9775,
+    "hackathonValue": 4078.992403873971
+  },
+  {
+    "id": "105",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -11767.1875,
+    "hackathonValue": 5865.562308535378
+  },
+  {
+    "id": "106",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -16575,
+    "hackathonValue": 13122.421635920453
+  },
+  {
+    "id": "107",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -18700,
+    "hackathonValue": 15776.814316054737
+  },
+  {
+    "id": "108",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -20825,
+    "hackathonValue": 67709.41385547516
+  },
+  {
+    "id": "109",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -18540.625,
+    "hackathonValue": 14367.629067811074
+  },
+  {
+    "id": "110",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -23375,
+    "hackathonValue": 26430.991014364663
+  },
+  {
+    "id": "111",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2002.3125000000002,
+    "deposits": 21250,
+    "payProp": 0,
+    "calcNo5Value": -123252.3125,
+    "hackathonValue": 366590.3775952544
+  },
+  {
+    "id": "112",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2840.6275625,
+    "deposits": 18509.8125,
+    "payProp": 0,
+    "calcNo5Value": -121350.4400625,
+    "hackathonValue": 240252.56919821713
+  },
+  {
+    "id": "113",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -18275,
+    "hackathonValue": 14954.847129413714
+  },
+  {
+    "id": "114",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 4000,
+    "payProp": 106600,
+    "calcNo5Value": 119670,
+    "hackathonValue": 0
+  },
+  {
+    "id": "115",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2352.0615625,
+    "deposits": 12856.25,
+    "payProp": 0,
+    "calcNo5Value": -115208.3115625,
+    "hackathonValue": 192820.1316148963
+  },
+  {
+    "id": "116",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -22100,
+    "hackathonValue": 10188.643271562054
+  },
+  {
+    "id": "117",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 1972.5040625000001,
+    "deposits": 17956.25,
+    "payProp": 0,
+    "calcNo5Value": -119928.7540625,
+    "hackathonValue": 287005.0308008214
+  },
+  {
+    "id": "118",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 1920.0027500000003,
+    "deposits": 12155,
+    "payProp": 0,
+    "calcNo5Value": -114075.00275,
+    "hackathonValue": 161901.66039242528
+  },
+  {
+    "id": "119",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2657.338125,
+    "deposits": 16043.75,
+    "payProp": 0,
+    "calcNo5Value": -118701.088125,
+    "hackathonValue": 183752.23651099842
+  },
+  {
+    "id": "120",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -16575,
+    "hackathonValue": 27498.266415281443
+  },
+  {
+    "id": "121",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -21887.5,
+    "hackathonValue": 29723.09294938181
+  },
+  {
+    "id": "122",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 1998.4662500000002,
+    "deposits": 20825,
+    "payProp": 0,
+    "calcNo5Value": -122823.46625,
+    "hackathonValue": 278585.34910176
+  },
+  {
+    "id": "123",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -6375,
+    "hackathonValue": 2519.8298512384895
+  },
+  {
+    "id": "124",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -4250,
+    "hackathonValue": 5545.173292623258
+  },
+  {
+    "id": "125",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -4250,
+    "hackathonValue": 4784.608301504951
+  },
+  {
+    "id": "126",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2524.036875,
+    "deposits": 5206.25,
+    "payProp": 0,
+    "calcNo5Value": -107730.286875,
+    "hackathonValue": 23884.033475918855
+  },
+  {
+    "id": "127",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2390,
+    "deposits": 2000,
+    "payProp": 16400,
+    "calcNo5Value": -76624.035372238,
+    "hackathonValue": 0
+  },
+  {
+    "id": "128",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2530,
+    "deposits": 4000,
+    "payProp": 12300,
+    "calcNo5Value": -82002.609389811,
+    "hackathonValue": 0
+  },
+  {
+    "id": "129",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2605.2675,
+    "deposits": 5950,
+    "payProp": 0,
+    "calcNo5Value": -108555.2675,
+    "hackathonValue": 27580.942599028444
+  },
+  {
+    "id": "130",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2608.62765625,
+    "deposits": 6215.625,
+    "payProp": 0,
+    "calcNo5Value": -108824.25265625,
+    "hackathonValue": 25728.993303658965
+  },
+  {
+    "id": "131",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -13387.5,
+    "hackathonValue": 19975.43994308246
+  },
+  {
+    "id": "132",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2458.563125,
+    "deposits": 5737.5,
+    "payProp": 0,
+    "calcNo5Value": -108196.063125,
+    "hackathonValue": 21943.76546409283
+  },
+  {
+    "id": "133",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -14450,
+    "hackathonValue": 12043.006267259281
+  },
+  {
+    "id": "134",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2602.579375,
+    "deposits": 5737.5,
+    "payProp": 0,
+    "calcNo5Value": -108340.079375,
+    "hackathonValue": 26850.07814358687
+  },
+  {
+    "id": "135",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2511.89,
+    "deposits": 10200,
+    "payProp": 0,
+    "calcNo5Value": -112711.89,
+    "hackathonValue": 40265.29074330121
+  },
+  {
+    "id": "136",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2606.6115625,
+    "deposits": 6056.25,
+    "payProp": 0,
+    "calcNo5Value": -108662.8615625,
+    "hackathonValue": 22864.840831074864
+  },
+  {
+    "id": "137",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2651.973671875,
+    "deposits": 9642.1875,
+    "payProp": 0,
+    "calcNo5Value": -112294.161171875,
+    "hackathonValue": 51108.03157026443
+  },
+  {
+    "id": "138",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -22418.75,
+    "hackathonValue": 8696.365283404637
+  },
+  {
+    "id": "139",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -10200,
+    "hackathonValue": 16229.337065498445
+  },
+  {
+    "id": "140",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2607.955625,
+    "deposits": 6162.5,
+    "payProp": 0,
+    "calcNo5Value": -108770.455625,
+    "hackathonValue": 13401.336675478477
+  },
+  {
+    "id": "141",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2300,
+    "deposits": 1500,
+    "payProp": 8200,
+    "calcNo5Value": -92616.2930687261,
+    "hackathonValue": 0
+  },
+  {
+    "id": "142",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2718.7875,
+    "deposits": 9137.5,
+    "payProp": 0,
+    "calcNo5Value": -111856.2875,
+    "hackathonValue": 17991.240247220052
+  },
+  {
+    "id": "143",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2527.9575,
+    "deposits": 5525,
+    "payProp": 0,
+    "calcNo5Value": -108052.9575,
+    "hackathonValue": 7683.27461786676
+  },
+  {
+    "id": "144",
+    "oppeningAsset": 0,
+    "calcNo4Value": 0,
+    "deposits": 0,
+    "payProp": 0,
+    "calcNo5Value": -23975.3125,
+    "hackathonValue": 9347.07975644403
+  },
+  {
+    "id": "145",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2460,
+    "deposits": 2500,
+    "payProp": 4920,
+    "calcNo5Value": -97935.1869980212,
+    "hackathonValue": 0
+  },
+  {
+    "id": "146",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2502.36734375,
+    "deposits": 9403.125,
+    "payProp": 0,
+    "calcNo5Value": -111905.49234375,
+    "hackathonValue": 14165.850735750653
+  },
+  {
+    "id": "147",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2591.994375,
+    "deposits": 10731.25,
+    "payProp": 0,
+    "calcNo5Value": -113323.244375,
+    "hackathonValue": 17020.6668284135
+  },
+  {
+    "id": "148",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2632.14875,
+    "deposits": 8075,
+    "payProp": 0,
+    "calcNo5Value": -110707.14875,
+    "hackathonValue": 13322.195873237297
+  },
+  {
+    "id": "149",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2525.34375,
+    "deposits": 5312.5,
+    "payProp": 0,
+    "calcNo5Value": -107837.84375,
+    "hackathonValue": 8342.597923387002
+  },
+  {
+    "id": "150",
+    "oppeningAsset": 100000,
+    "calcNo4Value": 2456.02375,
+    "deposits": 5525,
+    "payProp": 0,
+    "calcNo5Value": -107981.02375,
+    "hackathonValue": 8417.897146441554
+  }
+]
