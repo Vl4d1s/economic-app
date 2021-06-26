@@ -242,7 +242,43 @@ const calcNo3 = workers => {
   return ActuarialProfitLossArray;
 };
 
-console.log(calcNo3(workers));
+const calcNo4 = workers => {
+  const yieldProgramAssetsArray = [];
+  const interestRateArray = interestRateCalculation(workers);
+
+  for (let i = 0; i < workers.length; i++) {
+    const { id, deposits, leavingDate } = workers[i];
+    const oppeningAsset = parseFloat(assets[i].value);
+    const interestRate = parseFloat(interestRateArray[i].value);
+    const isLeaving = !leavingDate ? 0 : parseFloat(deposits);
+
+    const yieldProgramAssets = oppeningAsset * interestRate + (parseFloat(deposits) - isLeaving) * (interestRate / 2);
+    yieldProgramAssetsArray.push({ id, value: yieldProgramAssets });
+  }
+
+  return yieldProgramAssetsArray;
+};
+
+const calcNo5 = workers => {
+  const fairValueAssetsArray = [];
+  const yieldProgramAssetsArray = calcNo4(workers);
+
+  for (let i = 0; i < workers.length; i++) {
+    const { id, propValue, deposits, leavingDate, payProp } = workers[i];
+    const workerYieldProgramAssets = yieldProgramAssetsArray[i].value;
+    const oppeningAsset = parseFloat(assets[i].value);
+    const isLeaving = !leavingDate ? 0 : parseFloat(deposits);
+
+    fairValueAssets =
+      parseFloat(propValue) - oppeningAsset - workerYieldProgramAssets - parseFloat(deposits) + parseFloat(payProp);
+
+    fairValueAssetsArray.push({ id, value: fairValueAssets });
+  }
+
+  return fairValueAssetsArray;
+};
+
+console.log(calcNo5(workers));
 // console.log(calcNo2([workers[2]]));
 // console.log(calcNo2(workers));
 // console.log(interestRateCalculation(workers));
