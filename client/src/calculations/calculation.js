@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+//
 const workers = require('./tabels/workers.json');
 const lifeTable = require('./tabels/lifeTable.json');
 const leavingProbabilityTable = require('./tabels/leavingProb.json');
